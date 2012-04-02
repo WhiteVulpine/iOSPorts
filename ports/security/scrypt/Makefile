@@ -56,7 +56,7 @@ $(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
 scrypt/patched_for_xcode: $(PKGHEADERS)
-	patch -N -p0 -i build-aux/scrypt-1.1.6.patch || exit 0
+	for patch in build-aux/scrypt-1.1.6*.patch; do patch -N -p0 -i $${patch} || exit; done; :
 	touch scrypt/patched_for_xcode
 
 ../../../include/scrypt/scryptenc.h: $(PKGHEADERS)

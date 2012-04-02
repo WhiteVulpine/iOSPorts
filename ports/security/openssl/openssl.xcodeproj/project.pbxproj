@@ -7113,11 +7113,13 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
+				ARCHS = "$(NATIVE_ARCH)";
+				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
@@ -7139,21 +7141,22 @@
 					"-DOPENSSL_NO_RFC3779",
 					"-DOPENSSL_NO_STORE",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
+				ARCHS = "$(NATIVE_ARCH)";
+				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -7173,9 +7176,7 @@
 					"-DOPENSSL_NO_RFC3779",
 					"-DOPENSSL_NO_STORE",
 				);
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Release;
 		};

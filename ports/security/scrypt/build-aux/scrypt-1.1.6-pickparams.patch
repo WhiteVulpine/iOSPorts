@@ -1,3 +1,5 @@
+This patch makes the pickparams function external.
+
 --- scrypt/lib/scryptenc/scryptenc.h~	2010-01-16 21:48:20.000000000 +0100
 +++ scrypt/lib/scryptenc/scryptenc.h	2012-02-10 17:23:18.000000000 +0100
 @@ -72,6 +72,9 @@

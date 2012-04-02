@@ -24,7 +24,6 @@
 
 /* Begin PBXBuildFile section */
 		DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
-		DA1A142514E4914800BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
 		DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
 		DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */; };
 		DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */; };
@@ -168,7 +167,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA8251C514E5CDF7008EBC5A /* libscryptcrypto.a in Frameworks */,
-				DA1A142514E4914800BCFFBE /* libutil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,11 +573,13 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
+				ARCHS = "$(NATIVE_ARCH)";
+				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_THUMB_SUPPORT = NO;
@@ -589,21 +589,22 @@
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
+				ARCHS = "$(NATIVE_ARCH)";
+				"ARCHS[sdk=iphoneos*]" = (
 					armv6,
-					armv7,
+					"$(ARCHS_STANDARD_32_BIT)",
 				);
 				"ARCHS[sdk=iphonesimulator*]" = i386;
+				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -611,9 +612,7 @@
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
-				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
-				VALID_ARCHS = "i386 armv6 armv7";
 			};
 			name = Release;
 		};
