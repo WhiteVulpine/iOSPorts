@@ -101,6 +101,34 @@
 			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
 			remoteInfo = util;
 		};
+		DA6E4A33155E580D00CFF2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4;
+			remoteInfo = scryptcrypto;
+		};
+		DA6E4A3B155E581F00CFF2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
+			remoteInfo = util;
+		};
+		DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511C51127770FD00DE46C4;
+			remoteInfo = crypto;
+		};
+		DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511DED127788EC00DE46C4;
+			remoteInfo = "Makefile-openssl";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -350,6 +378,7 @@
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
+				DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */,
 			);
 			name = "Makefile-scrypt";
 			passBuildSettingsInEnvironment = 1;
@@ -370,6 +399,8 @@
 			);
 			dependencies = (
 				A0511DF3127788FD00DE46C4 /* PBXTargetDependency */,
+				DA6E4A3C155E581F00CFF2D5 /* PBXTargetDependency */,
+				DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */,
 			);
 			name = scryptcrypto;
 			productName = openssl;
@@ -388,6 +419,7 @@
 			);
 			dependencies = (
 				A0511DF1127788F600DE46C4 /* PBXTargetDependency */,
+				DA6E4A34155E580D00CFF2D5 /* PBXTargetDependency */,
 			);
 			name = scryptenc;
 			productName = openssl;
@@ -537,6 +569,26 @@
 			isa = PBXTargetDependency;
 			target = DA67FE2814E4834300DB7CC9 /* util */;
 			targetProxy = DA67FE5E14E4836300DB7CC9 /* PBXContainerItemProxy */;
+		};
+		DA6E4A34155E580D00CFF2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511C51127770FD00DE46C4 /* scryptcrypto */;
+			targetProxy = DA6E4A33155E580D00CFF2D5 /* PBXContainerItemProxy */;
+		};
+		DA6E4A3C155E581F00CFF2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA67FE2814E4834300DB7CC9 /* util */;
+			targetProxy = DA6E4A3B155E581F00CFF2D5 /* PBXContainerItemProxy */;
+		};
+		DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = crypto;
+			targetProxy = DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */;
+		};
+		DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Makefile-openssl";
+			targetProxy = DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
