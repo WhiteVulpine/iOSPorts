@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'scrypt-bin-ios' target in the 'scrypt-bin-ios' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
