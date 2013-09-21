@@ -365,7 +365,7 @@
 				DA1A13F214E487D900BCFFBE /* libcrypto.a */,
 				DA1A13F414E487D900BCFFBE /* test.app */,
 				DABD3E951711E7D700CF925C /* libopenssl-bin-ios.a */,
-				DABD3E971711E7D700CF925C /* libopenssl-bin-ios copy.a */,
+				DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -642,7 +642,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0460;
+				LastUpgradeCheck = 0500;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "scrypt" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -705,10 +705,10 @@
 			remoteRef = DABD3E941711E7D700CF925C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		DABD3E971711E7D700CF925C /* libopenssl-bin-ios copy.a */ = {
+		DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = "libopenssl-bin-ios copy.a";
+			path = "libopenssl-bin-osx.a";
 			remoteRef = DABD3E961711E7D700CF925C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -825,98 +825,45 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		1DEB921F08733DC00010E9CD /* Debug */ = {
+		1DEB922008733DC00010E9CD /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release-OSX";
+		};
+		1DEB922408733DC00010E9CD /* Release-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		1DEB922008733DC00010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		1DEB922308733DC00010E9CD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				"ARCHS[sdk=iphoneos*]" = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				"ARCHS[sdk=iphonesimulator*]" = i386;
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
-				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
-				PUBLIC_HEADERS_FOLDER_PATH = include;
-			};
-			name = Debug;
-		};
-		1DEB922408733DC00010E9CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
-				"ARCHS[sdk=iphoneos*]" = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				"ARCHS[sdk=iphonesimulator*]" = i386;
-				"ARCHS[sdk=macosx*]" = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				LD_NO_PIE = NO;
+				LLVM_LTO = YES;
+				LLVM_VECTORIZE_LOOPS = YES;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
 				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = macosx;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		A0511C58127770FD00DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		A0511C59127770FD00DE46C4 /* Release */ = {
+		A0511C59127770FD00DE46C4 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -927,21 +874,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		A0511DCF127788A200DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = scrypt;
-			};
-			name = Debug;
-		};
-		A0511DD0127788A200DE46C4 /* Release */ = {
+		A0511DD0127788A200DE46C4 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -951,21 +886,9 @@
 				PRODUCT_NAME = scrypt;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		A0511DEE127788ED00DE46C4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = Makefile;
-			};
-			name = Debug;
-		};
-		A0511DEF127788ED00DE46C4 /* Release */ = {
+		A0511DEF127788ED00DE46C4 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -975,26 +898,9 @@
 				PRODUCT_NAME = Makefile;
 				ZERO_LINK = NO;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		DA67FE5B14E4834300DB7CC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DA67FE5C14E4834300DB7CC9 /* Release */ = {
+		DA67FE5C14E4834300DB7CC9 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1006,46 +912,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		DABD3E8D1711E7D700CF925C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/scrypt_bin_ios.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DABD3E8E1711E7D700CF925C /* Release */ = {
+		DABD3E8E1711E7D700CF925C /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1074,47 +943,9 @@
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release-OSX";
 		};
-		DABD3EA71711E7E100CF925C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DSTROOT = /tmp/scrypt_bin_osx.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "scrypt-bin-osx/scrypt-bin-osx-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DABD3EA81711E7E100CF925C /* Release */ = {
+		DABD3EA81711E7E100CF925C /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1144,7 +975,160 @@
 				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release-OSX";
+		};
+		DAFFC60617ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_FAST_MATH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_NO_PIE = NO;
+				LLVM_LTO = YES;
+				LLVM_VECTORIZE_LOOPS = YES;
+				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
+				SDKROOT = iphoneos;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60717ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = Makefile;
+				ZERO_LINK = NO;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60817ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60917ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60A17ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60B17ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				PRODUCT_NAME = scrypt;
+				ZERO_LINK = NO;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60C17ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/scrypt_bin_ios.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-iOS";
+		};
+		DAFFC60D17ED4298007BB020 /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/scrypt_bin_osx.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "scrypt-bin-osx/scrypt-bin-osx-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release-iOS";
 		};
 /* End XCBuildConfiguration section */
 
@@ -1152,74 +1136,74 @@
 		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "scryptenc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB921F08733DC00010E9CD /* Debug */,
-				1DEB922008733DC00010E9CD /* Release */,
+				1DEB922008733DC00010E9CD /* Release-OSX */,
+				DAFFC60817ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "scrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1DEB922308733DC00010E9CD /* Debug */,
-				1DEB922408733DC00010E9CD /* Release */,
+				1DEB922408733DC00010E9CD /* Release-OSX */,
+				DAFFC60617ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		A0511C57127770FD00DE46C4 /* Build configuration list for PBXNativeTarget "scryptcrypto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0511C58127770FD00DE46C4 /* Debug */,
-				A0511C59127770FD00DE46C4 /* Release */,
+				A0511C59127770FD00DE46C4 /* Release-OSX */,
+				DAFFC60917ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "scrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0511DCF127788A200DE46C4 /* Debug */,
-				A0511DD0127788A200DE46C4 /* Release */,
+				A0511DD0127788A200DE46C4 /* Release-OSX */,
+				DAFFC60B17ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		A0511DF61277891C00DE46C4 /* Build configuration list for PBXLegacyTarget "Makefile-scrypt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A0511DEE127788ED00DE46C4 /* Debug */,
-				A0511DEF127788ED00DE46C4 /* Release */,
+				A0511DEF127788ED00DE46C4 /* Release-OSX */,
+				DAFFC60717ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		DA67FE5A14E4834300DB7CC9 /* Build configuration list for PBXNativeTarget "util" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA67FE5B14E4834300DB7CC9 /* Debug */,
-				DA67FE5C14E4834300DB7CC9 /* Release */,
+				DA67FE5C14E4834300DB7CC9 /* Release-OSX */,
+				DAFFC60A17ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		DABD3E981711E7D700CF925C /* Build configuration list for PBXNativeTarget "scrypt-bin-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DABD3E8D1711E7D700CF925C /* Debug */,
-				DABD3E8E1711E7D700CF925C /* Release */,
+				DABD3E8E1711E7D700CF925C /* Release-OSX */,
+				DAFFC60C17ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 		DABD3EA61711E7E100CF925C /* Build configuration list for PBXNativeTarget "scrypt-bin-osx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DABD3EA71711E7E100CF925C /* Debug */,
-				DABD3EA81711E7E100CF925C /* Release */,
+				DABD3EA81711E7E100CF925C /* Release-OSX */,
+				DAFFC60D17ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release-OSX";
 		};
 /* End XCConfigurationList section */
 	};
