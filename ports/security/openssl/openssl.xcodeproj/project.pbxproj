@@ -7676,7 +7676,6 @@
 					openssl/include,
 					openssl/crypto,
 				);
-				LLVM_LTO = YES;
 				LLVM_VECTORIZE_LOOPS = YES;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
@@ -7838,7 +7837,6 @@
 					openssl/crypto,
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LLVM_LTO = YES;
 				LLVM_VECTORIZE_LOOPS = YES;
 				OTHER_CFLAGS = (
 					"-DOPENSSL_NO_GMP",
