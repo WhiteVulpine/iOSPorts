@@ -54,7 +54,6 @@
 		DABD3F6F1712288700CF925C /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB61711E81B00CF925C /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABD3F701712288700CF925C /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB71711E81B00CF925C /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABD3F711712288700CF925C /* warn.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB81711E81B00CF925C /* warn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DAE8E65019857A8900416A0F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,20 +85,6 @@
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = Makefile;
 		};
-		DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		DA67FE2A14E4834300DB7CC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -127,34 +112,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
 			remoteInfo = util;
-		};
-		DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
-		DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511DED127788EC00DE46C4;
-			remoteInfo = "Makefile-openssl";
-		};
-		DABD3E941711E7D700CF925C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DABD3DD31711E61700CF925C;
-			remoteInfo = "openssl-bin-ios";
-		};
-		DABD3E961711E7D700CF925C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DABD3DEB1711E6A100CF925C;
-			remoteInfo = "openssl-bin-osx";
 		};
 		DABD3EB91711E84500CF925C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -201,7 +158,6 @@
 		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libscryptenc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libscryptenc.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = "<group>"; };
 		DA1A140714E48E1600BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DA1A141614E48E9F00BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DA67FE5D14E4834300DB7CC9 /* libutil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutil.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -261,7 +217,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DAE8E65019857A8900416A0F /* libcrypto.a in Frameworks */,
 				DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +273,6 @@
 				DABD3EAF1711E81B00CF925C /* scrypt */,
 				DABD3EA91711E80800CF925C /* libscryptenc-ios.a */,
 				DABD3EAA1711E80800CF925C /* libscryptenc-osx.a */,
-				DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */,
 				A05123771278ACDE00DE46C4 /* README */,
 				A0511321127769BB00DE46C4 /* Makefile */,
 				A051131E127769BB00DE46C4 /* build-aux */,
@@ -351,17 +305,6 @@
 				DAE8E64B1985763500416A0F /* scrypt-1.1.6-pickparams.patch */,
 			);
 			path = "build-aux";
-			sourceTree = "<group>";
-		};
-		DA1A13E414E487D800BCFFBE /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA1A13F014E487D900BCFFBE /* libssl.a */,
-				DA1A13F214E487D900BCFFBE /* libcrypto.a */,
-				DABD3E951711E7D700CF925C /* libopenssl-bin-ios.a */,
-				DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		DA67FE6914E4845900DB7CC9 /* scrypt */ = {
@@ -526,7 +469,6 @@
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
-				DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */,
 			);
 			name = "Makefile-scrypt";
 			passBuildSettingsInEnvironment = 1;
@@ -548,7 +490,6 @@
 			dependencies = (
 				A0511DF3127788FD00DE46C4 /* PBXTargetDependency */,
 				DA6E4A3C155E581F00CFF2D5 /* PBXTargetDependency */,
-				DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */,
 			);
 			name = scryptcrypto;
 			productName = openssl;
@@ -651,12 +592,6 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* openssl */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DA1A13E414E487D800BCFFBE /* Products */;
-					ProjectRef = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A0511DED127788EC00DE46C4 /* Makefile-scrypt */,
@@ -669,37 +604,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		DA1A13F014E487D900BCFFBE /* libssl.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libssl.a;
-			remoteRef = DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DA1A13F214E487D900BCFFBE /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DABD3E951711E7D700CF925C /* libopenssl-bin-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libopenssl-bin-ios.a";
-			remoteRef = DABD3E941711E7D700CF925C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libopenssl-bin-osx.a";
-			remoteRef = DABD3E961711E7D700CF925C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0511C54127770FD00DE46C4 /* Sources */ = {
@@ -788,16 +692,6 @@
 			isa = PBXTargetDependency;
 			target = DA67FE2814E4834300DB7CC9 /* util */;
 			targetProxy = DA6E4A3B155E581F00CFF2D5 /* PBXContainerItemProxy */;
-		};
-		DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */;
-		};
-		DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Makefile-openssl";
-			targetProxy = DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */;
 		};
 		DABD3EBA1711E84500CF925C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
