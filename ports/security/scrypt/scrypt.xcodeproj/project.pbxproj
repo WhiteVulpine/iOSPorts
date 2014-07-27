@@ -23,7 +23,6 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
 		DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
 		DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */; };
 		DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */; };
@@ -55,23 +54,10 @@
 		DABD3F6F1712288700CF925C /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB61711E81B00CF925C /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABD3F701712288700CF925C /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB71711E81B00CF925C /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DABD3F711712288700CF925C /* warn.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB81711E81B00CF925C /* warn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE8E65019857A8900416A0F /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A01B2A371576DDB300D365BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A01B2A391576DDB300D365BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -222,7 +208,6 @@
 		DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "configure-wrapper.log"; sourceTree = "<group>"; };
 		DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		DA67FE6214E483BD00DB7CC9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.patch"; sourceTree = "<group>"; };
 		DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.tgz.md5"; sourceTree = "<group>"; };
 		DA67FE6B14E4845900DB7CC9 /* depcomp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
 		DA67FE6C14E4845900DB7CC9 /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
@@ -267,6 +252,8 @@
 		DABD3EB61711E81B00CF925C /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
 		DABD3EB71711E81B00CF925C /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
 		DABD3EB81711E81B00CF925C /* warn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warn.h; sourceTree = "<group>"; };
+		DAE8E64A1985763500416A0F /* scrypt-1.1.6-sha256.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "scrypt-1.1.6-sha256.patch"; sourceTree = "<group>"; };
+		DAE8E64B1985763500416A0F /* scrypt-1.1.6-pickparams.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "scrypt-1.1.6-pickparams.patch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +261,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE8E65019857A8900416A0F /* libcrypto.a in Frameworks */,
 				DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */,
-				DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,8 +346,9 @@
 				DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */,
 				DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */,
 				DA67FE6214E483BD00DB7CC9 /* LICENSE */,
-				DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */,
 				DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */,
+				DAE8E64A1985763500416A0F /* scrypt-1.1.6-sha256.patch */,
+				DAE8E64B1985763500416A0F /* scrypt-1.1.6-pickparams.patch */,
 			);
 			path = "build-aux";
 			sourceTree = "<group>";
@@ -538,8 +526,7 @@
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
-				A01B2A381576DDB300D365BA /* PBXTargetDependency */,
-				A01B2A3A1576DDB300D365BA /* PBXTargetDependency */,
+				DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */,
 			);
 			name = "Makefile-scrypt";
 			passBuildSettingsInEnvironment = 1;
@@ -762,16 +749,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A01B2A381576DDB300D365BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ssl;
-			targetProxy = A01B2A371576DDB300D365BA /* PBXContainerItemProxy */;
-		};
-		A01B2A3A1576DDB300D365BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = A01B2A391576DDB300D365BA /* PBXContainerItemProxy */;
-		};
 		A0511DD2127788A800DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D2AAC07D0554694100DB518D /* scryptenc */;
@@ -1060,9 +1037,6 @@
 				HEADER_SEARCH_PATHS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
 			};
 			name = "Release-iOS";
 		};

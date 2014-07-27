@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>44B2005F-98ED-4D47-822B-317DD042D44F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>scrypt</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>144E49CB-C80A-4083-8DD2-2C2A415FE564</key>
+		<string>git://github.com/lhunath/iOSPorts.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ports/security/scrypt/scrypt.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>144E49CB-C80A-4083-8DD2-2C2A415FE564</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>git://github.com/lhunath/iOSPorts.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>144E49CB-C80A-4083-8DD2-2C2A415FE564</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>144E49CB-C80A-4083-8DD2-2C2A415FE564</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOSPorts</string>
+		</dict>
+	</array>
+</dict>
+</plist>
