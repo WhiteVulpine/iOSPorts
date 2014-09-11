@@ -860,7 +860,11 @@
 		DAFFC60617ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ARCHS = (
+					"$(ARCHS_STANDARD_INCLUDING_64_BIT)",
+					i386,
+					x86_64,
+				);
 				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
