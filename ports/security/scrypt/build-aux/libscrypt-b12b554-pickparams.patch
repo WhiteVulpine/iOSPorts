@@ -4,7 +4,7 @@
   * 13	error reading input file
   */
  
-+static int pickparams(size_t, double, double,
++int pickparams(size_t, double, double,
 +    int *, uint32_t *, uint32_t *);
 +
  /**
