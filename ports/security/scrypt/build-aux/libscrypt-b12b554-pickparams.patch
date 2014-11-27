@@ -1,0 +1,12 @@
+--- libscrypt/lib/scryptenc/scryptenc.h~	2014-11-26 18:38:45.000000000 -0500
++++ libscrypt/lib/scryptenc/scryptenc.h	2014-11-26 18:39:02.000000000 -0500
+@@ -80,6 +80,9 @@
+  * 13	error reading input file
+  */
+ 
++static int pickparams(size_t, double, double,
++    int *, uint32_t *, uint32_t *);
++
+ /**
+  * scryptenc_buf(inbuf, inbuflen, outbuf, passwd, passwdlen,
+  *     maxmem, maxmemfrac, maxtime):
