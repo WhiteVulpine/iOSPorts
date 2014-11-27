@@ -62,8 +62,10 @@ libscrypt/patched_for_xcode: $(PKGHEADERS)
 ../../../include/scrypt/scryptenc.h: $(PKGHEADERS)
 	@mkdir -p ../../../include/scrypt
 	cp $(PACKAGE_DIR)/lib/*/*.h ../../../include/scrypt/
+../../../include/scrypt/crypto_aesctr.h: $(PKGHEADERS)
+	cp $(PACKAGE_DIR)/libcperciva/*/*.h ../../../include/scrypt/
 
-extra-prep: libscrypt/patched_for_xcode $(PKGHEADERS) ../../../include/scrypt/scryptenc.h
+extra-prep: libscrypt/patched_for_xcode $(PKGHEADERS) ../../../include/scrypt/scryptenc.h ../../../include/scrypt/crypto_aesctr.h
 
 clean-local:
 	/bin/rm -Rf include
