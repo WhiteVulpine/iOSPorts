@@ -10,3 +10,19 @@
  /**
   * scryptenc_buf(inbuf, inbuflen, outbuf, passwd, passwdlen,
   *     maxmem, maxmemfrac, maxtime):
+--- libscrypt/lib/scryptenc/scryptenc.c~	2014-12-18 23:40:57.000000000 -0500
++++ libscrypt/lib/scryptenc/scryptenc.c	2014-12-18 23:41:04.000000000 -0500
+@@ -48,12 +48,10 @@
+ 
+ #define ENCBLOCK 65536
+ 
+-static int pickparams(size_t, double, double,
+-    int *, uint32_t *, uint32_t *);
+ static int checkparams(size_t, double, double, int, uint32_t, uint32_t);
+ static int getsalt(uint8_t[32]);
+ 
+-static int
++int
+ pickparams(size_t maxmem, double maxmemfrac, double maxtime,
+     int * logN, uint32_t * r, uint32_t * p)
+ {
