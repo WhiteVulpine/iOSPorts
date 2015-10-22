@@ -25,15 +25,43 @@
 /* Begin PBXBuildFile section */
 		DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
 		DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
-		DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */; };
-		DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */; };
-		DA67FE9014E484B100DB7CC9 /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */; };
-		DA67FE9214E484B100DB7CC9 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7914E4845900DB7CC9 /* sha256.c */; };
-		DA67FE9314E484BB00DB7CC9 /* scryptenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7D14E4845900DB7CC9 /* scryptenc.c */; };
-		DA67FE9414E484BB00DB7CC9 /* scryptenc_cpuperf.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */; };
-		DA67FE9514E484C200DB7CC9 /* memlimit.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8214E4845900DB7CC9 /* memlimit.c */; };
-		DA67FE9614E484C200DB7CC9 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8414E4845900DB7CC9 /* readpass.c */; };
-		DA67FE9714E484C200DB7CC9 /* warn.c in Sources */ = {isa = PBXBuildFile; fileRef = DA67FE8714E4845900DB7CC9 /* warn.c */; };
+		DA2C3CBF1BD92EB1001137B3 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C7B1BD92EB1001137B3 /* config.h */; };
+		DA2C3CC01BD92EB1001137B3 /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8A1BD92EB1001137B3 /* crypto_scrypt-ref.c */; };
+		DA2C3CC11BD92EB1001137B3 /* crypto_scrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8B1BD92EB1001137B3 /* crypto_scrypt.c */; };
+		DA2C3CC21BD92EB1001137B3 /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C8C1BD92EB1001137B3 /* crypto_scrypt.h */; };
+		DA2C3CC31BD92EB1001137B3 /* crypto_scrypt_smix.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8D1BD92EB1001137B3 /* crypto_scrypt_smix.c */; };
+		DA2C3CC41BD92EB1001137B3 /* crypto_scrypt_smix.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C8E1BD92EB1001137B3 /* crypto_scrypt_smix.h */; };
+		DA2C3CC51BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8F1BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c */; };
+		DA2C3CC61BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C901BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h */; };
+		DA2C3CC81BD92EB1001137B3 /* scryptenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C941BD92EB1001137B3 /* scryptenc.h */; };
+		DA2C3CCA1BD92EB1001137B3 /* scryptenc_cpuperf.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C961BD92EB1001137B3 /* scryptenc_cpuperf.h */; };
+		DA2C3CCC1BD92EB1001137B3 /* memlimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C991BD92EB1001137B3 /* memlimit.h */; };
+		DA2C3CCD1BD92EB1001137B3 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C9C1BD92EB1001137B3 /* sha256.c */; };
+		DA2C3CCE1BD92EB1001137B3 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C9D1BD92EB1001137B3 /* sha256.h */; };
+		DA2C3CD21BD92EB1001137B3 /* cpusupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CA51BD92EB1001137B3 /* cpusupport.h */; };
+		DA2C3CD31BD92EB1001137B3 /* cpusupport_x86_aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA61BD92EB1001137B3 /* cpusupport_x86_aesni.c */; };
+		DA2C3CD41BD92EB1001137B3 /* cpusupport_x86_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA71BD92EB1001137B3 /* cpusupport_x86_sse2.c */; };
+		DA2C3CD51BD92EB1001137B3 /* crypto_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA91BD92EB1001137B3 /* crypto_aes.c */; };
+		DA2C3CD61BD92EB1001137B3 /* crypto_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAA1BD92EB1001137B3 /* crypto_aes.h */; };
+		DA2C3CD71BD92EB1001137B3 /* crypto_aes_aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAB1BD92EB1001137B3 /* crypto_aes_aesni.c */; };
+		DA2C3CD81BD92EB1001137B3 /* crypto_aes_aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAC1BD92EB1001137B3 /* crypto_aes_aesni.h */; };
+		DA2C3CD91BD92EB1001137B3 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAD1BD92EB1001137B3 /* crypto_aesctr.c */; };
+		DA2C3CDA1BD92EB1001137B3 /* crypto_aesctr.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAE1BD92EB1001137B3 /* crypto_aesctr.h */; };
+		DA2C3CDB1BD92EB1001137B3 /* crypto_entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAF1BD92EB1001137B3 /* crypto_entropy.c */; };
+		DA2C3CDC1BD92EB1001137B3 /* crypto_entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB01BD92EB1001137B3 /* crypto_entropy.h */; };
+		DA2C3CDD1BD92EB1001137B3 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB21BD92EB1001137B3 /* entropy.c */; };
+		DA2C3CDE1BD92EB1001137B3 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB31BD92EB1001137B3 /* entropy.h */; };
+		DA2C3CDF1BD92EB1001137B3 /* insecure_memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB41BD92EB1001137B3 /* insecure_memzero.c */; };
+		DA2C3CE01BD92EB1001137B3 /* insecure_memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB51BD92EB1001137B3 /* insecure_memzero.h */; };
+		DA2C3CE11BD92EB1001137B3 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB61BD92EB1001137B3 /* readpass.c */; };
+		DA2C3CE21BD92EB1001137B3 /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB71BD92EB1001137B3 /* readpass.h */; };
+		DA2C3CE31BD92EB1001137B3 /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB81BD92EB1001137B3 /* sysendian.h */; };
+		DA2C3CE41BD92EB1001137B3 /* warnp.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB91BD92EB1001137B3 /* warnp.c */; };
+		DA2C3CE51BD92EB1001137B3 /* warnp.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CBA1BD92EB1001137B3 /* warnp.h */; };
+		DA2C3CE71BD92EB1001137B3 /* scrypt_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CBD1BD92EB1001137B3 /* scrypt_platform.h */; };
+		DA2C3CE81BD92EBE001137B3 /* scryptenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C931BD92EB1001137B3 /* scryptenc.c */; };
+		DA2C3CE91BD92EC2001137B3 /* scryptenc_cpuperf.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C951BD92EB1001137B3 /* scryptenc_cpuperf.c */; };
+		DA2C3CEA1BD92ECD001137B3 /* memlimit.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C981BD92EB1001137B3 /* memlimit.c */; };
 		DA8251C514E5CDF7008EBC5A /* libscryptcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */; };
 		DABD3EAB1711E80800CF925C /* libscryptenc-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABD3EA91711E80800CF925C /* libscryptenc-ios.a */; };
 		DABD3EAE1711E80800CF925C /* libscryptenc-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABD3EAA1711E80800CF925C /* libscryptenc-osx.a */; };
@@ -209,44 +237,69 @@
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libscryptenc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libscryptenc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = "<group>"; };
-		DA1A140714E48E1600BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DA1A141614E48E9F00BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DA2C3C7B1BD92EB1001137B3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "scrypt-1.2.0/config.h"; sourceTree = SOURCE_ROOT; };
+		DA2C3C7C1BD92EB1001137B3 /* patched_for_xcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = patched_for_xcode; path = "scrypt-1.2.0/patched_for_xcode"; sourceTree = SOURCE_ROOT; };
+		DA2C3C7E1BD92EB1001137B3 /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		DA2C3C7F1BD92EB1001137B3 /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		DA2C3C811BD92EB1001137B3 /* compile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = compile; sourceTree = "<group>"; };
+		DA2C3C821BD92EB1001137B3 /* depcomp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
+		DA2C3C831BD92EB1001137B3 /* install-sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
+		DA2C3C841BD92EB1001137B3 /* missing */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
+		DA2C3C851BD92EB1001137B3 /* config.h.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = config.h.in; path = "scrypt-1.2.0/config.h.in"; sourceTree = SOURCE_ROOT; };
+		DA2C3C861BD92EB1001137B3 /* configure */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = configure; path = "scrypt-1.2.0/configure"; sourceTree = SOURCE_ROOT; };
+		DA2C3C871BD92EB1001137B3 /* FORMAT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = FORMAT; path = "scrypt-1.2.0/FORMAT"; sourceTree = SOURCE_ROOT; };
+		DA2C3C8A1BD92EB1001137B3 /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
+		DA2C3C8B1BD92EB1001137B3 /* crypto_scrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_scrypt.c; sourceTree = "<group>"; };
+		DA2C3C8C1BD92EB1001137B3 /* crypto_scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		DA2C3C8D1BD92EB1001137B3 /* crypto_scrypt_smix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_scrypt_smix.c; sourceTree = "<group>"; };
+		DA2C3C8E1BD92EB1001137B3 /* crypto_scrypt_smix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt_smix.h; sourceTree = "<group>"; };
+		DA2C3C8F1BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_scrypt_smix_sse2.c; sourceTree = "<group>"; };
+		DA2C3C901BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt_smix_sse2.h; sourceTree = "<group>"; };
+		DA2C3C911BD92EB1001137B3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DA2C3C931BD92EB1001137B3 /* scryptenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scryptenc.c; sourceTree = "<group>"; };
+		DA2C3C941BD92EB1001137B3 /* scryptenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
+		DA2C3C951BD92EB1001137B3 /* scryptenc_cpuperf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scryptenc_cpuperf.c; sourceTree = "<group>"; };
+		DA2C3C961BD92EB1001137B3 /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
+		DA2C3C981BD92EB1001137B3 /* memlimit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memlimit.c; sourceTree = "<group>"; };
+		DA2C3C991BD92EB1001137B3 /* memlimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
+		DA2C3C9C1BD92EB1001137B3 /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		DA2C3C9D1BD92EB1001137B3 /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		DA2C3C9E1BD92EB1001137B3 /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		DA2C3CA11BD92EB1001137B3 /* cpusupport-X86-AESNI.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "cpusupport-X86-AESNI.c"; sourceTree = "<group>"; };
+		DA2C3CA21BD92EB1001137B3 /* cpusupport-X86-CPUID.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "cpusupport-X86-CPUID.c"; sourceTree = "<group>"; };
+		DA2C3CA31BD92EB1001137B3 /* cpusupport-X86-SSE2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "cpusupport-X86-SSE2.c"; sourceTree = "<group>"; };
+		DA2C3CA41BD92EB1001137B3 /* cpusupport.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = cpusupport.sh; sourceTree = "<group>"; };
+		DA2C3CA51BD92EB1001137B3 /* cpusupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpusupport.h; sourceTree = "<group>"; };
+		DA2C3CA61BD92EB1001137B3 /* cpusupport_x86_aesni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpusupport_x86_aesni.c; sourceTree = "<group>"; };
+		DA2C3CA71BD92EB1001137B3 /* cpusupport_x86_sse2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cpusupport_x86_sse2.c; sourceTree = "<group>"; };
+		DA2C3CA91BD92EB1001137B3 /* crypto_aes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_aes.c; sourceTree = "<group>"; };
+		DA2C3CAA1BD92EB1001137B3 /* crypto_aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aes.h; sourceTree = "<group>"; };
+		DA2C3CAB1BD92EB1001137B3 /* crypto_aes_aesni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_aes_aesni.c; sourceTree = "<group>"; };
+		DA2C3CAC1BD92EB1001137B3 /* crypto_aes_aesni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aes_aesni.h; sourceTree = "<group>"; };
+		DA2C3CAD1BD92EB1001137B3 /* crypto_aesctr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_aesctr.c; sourceTree = "<group>"; };
+		DA2C3CAE1BD92EB1001137B3 /* crypto_aesctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aesctr.h; sourceTree = "<group>"; };
+		DA2C3CAF1BD92EB1001137B3 /* crypto_entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_entropy.c; sourceTree = "<group>"; };
+		DA2C3CB01BD92EB1001137B3 /* crypto_entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_entropy.h; sourceTree = "<group>"; };
+		DA2C3CB21BD92EB1001137B3 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		DA2C3CB31BD92EB1001137B3 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		DA2C3CB41BD92EB1001137B3 /* insecure_memzero.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = insecure_memzero.c; sourceTree = "<group>"; };
+		DA2C3CB51BD92EB1001137B3 /* insecure_memzero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = insecure_memzero.h; sourceTree = "<group>"; };
+		DA2C3CB61BD92EB1001137B3 /* readpass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readpass.c; sourceTree = "<group>"; };
+		DA2C3CB71BD92EB1001137B3 /* readpass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readpass.h; sourceTree = "<group>"; };
+		DA2C3CB81BD92EB1001137B3 /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		DA2C3CB91BD92EB1001137B3 /* warnp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = warnp.c; sourceTree = "<group>"; };
+		DA2C3CBA1BD92EB1001137B3 /* warnp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnp.h; sourceTree = "<group>"; };
+		DA2C3CBB1BD92EB1001137B3 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "scrypt-1.2.0/main.c"; sourceTree = SOURCE_ROOT; };
+		DA2C3CBC1BD92EB1001137B3 /* Makefile.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Makefile.in; path = "scrypt-1.2.0/Makefile.in"; sourceTree = SOURCE_ROOT; };
+		DA2C3CBD1BD92EB1001137B3 /* scrypt_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scrypt_platform.h; path = "scrypt-1.2.0/scrypt_platform.h"; sourceTree = SOURCE_ROOT; };
+		DA2C3CBE1BD92EB1001137B3 /* scrypt.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; name = scrypt.1; path = "scrypt-1.2.0/scrypt.1"; sourceTree = SOURCE_ROOT; };
 		DA67FE5D14E4834300DB7CC9 /* libutil.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libutil.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "configure-wrapper.log"; sourceTree = "<group>"; };
 		DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		DA67FE6214E483BD00DB7CC9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.patch"; sourceTree = "<group>"; };
 		DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.tgz.md5"; sourceTree = "<group>"; };
-		DA67FE6B14E4845900DB7CC9 /* depcomp */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = depcomp; sourceTree = "<group>"; };
-		DA67FE6C14E4845900DB7CC9 /* install-sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "install-sh"; sourceTree = "<group>"; };
-		DA67FE6D14E4845900DB7CC9 /* missing */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = missing; sourceTree = "<group>"; };
-		DA67FE6E14E4845900DB7CC9 /* config.h.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = config.h.in; sourceTree = "<group>"; };
-		DA67FE6F14E4845900DB7CC9 /* configure */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = configure; sourceTree = "<group>"; };
-		DA67FE7014E4845900DB7CC9 /* FORMAT */ = {isa = PBXFileReference; lastKnownFileType = text; path = FORMAT; sourceTree = "<group>"; };
-		DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = crypto_aesctr.c; sourceTree = "<group>"; };
-		DA67FE7414E4845900DB7CC9 /* crypto_aesctr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_aesctr.h; sourceTree = "<group>"; };
-		DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
-		DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
-		DA67FE7814E4845900DB7CC9 /* crypto_scrypt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
-		DA67FE7914E4845900DB7CC9 /* sha256.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
-		DA67FE7A14E4845900DB7CC9 /* sha256.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
-		DA67FE7B14E4845900DB7CC9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		DA67FE7D14E4845900DB7CC9 /* scryptenc.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scryptenc.c; sourceTree = "<group>"; };
-		DA67FE7E14E4845900DB7CC9 /* scryptenc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
-		DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = scryptenc_cpuperf.c; sourceTree = "<group>"; };
-		DA67FE8014E4845900DB7CC9 /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
-		DA67FE8214E4845900DB7CC9 /* memlimit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = memlimit.c; sourceTree = "<group>"; };
-		DA67FE8314E4845900DB7CC9 /* memlimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
-		DA67FE8414E4845900DB7CC9 /* readpass.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = readpass.c; sourceTree = "<group>"; };
-		DA67FE8514E4845900DB7CC9 /* readpass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = readpass.h; sourceTree = "<group>"; };
-		DA67FE8614E4845900DB7CC9 /* sysendian.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
-		DA67FE8714E4845900DB7CC9 /* warn.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = warn.c; sourceTree = "<group>"; };
-		DA67FE8814E4845900DB7CC9 /* warn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = warn.h; sourceTree = "<group>"; };
-		DA67FE8914E4845900DB7CC9 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		DA67FE8A14E4845900DB7CC9 /* Makefile.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.in; sourceTree = "<group>"; };
-		DA67FE8B14E4845900DB7CC9 /* patched_for_xcode */ = {isa = PBXFileReference; lastKnownFileType = text; path = patched_for_xcode; sourceTree = "<group>"; };
-		DA67FE8C14E4845900DB7CC9 /* scrypt.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = scrypt.1; sourceTree = "<group>"; };
-		DA67FE8D14E4845900DB7CC9 /* scrypt_platform.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scrypt_platform.h; sourceTree = "<group>"; };
 		DABD3E841711E7D600CF925C /* libscrypt-bin-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libscrypt-bin-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD3E9D1711E7E000CF925C /* libscrypt-bin-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libscrypt-bin-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD3EA91711E80800CF925C /* libscryptenc-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libscryptenc-ios.a"; sourceTree = "<group>"; };
@@ -370,82 +423,167 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DA67FE6914E4845900DB7CC9 /* scrypt */ = {
+		DA2C3C7D1BD92EB1001137B3 /* autocrap */ = {
 			isa = PBXGroup;
 			children = (
-				DA1A140714E48E1600BCFFBE /* config.h */,
-				DA67FE6A14E4845900DB7CC9 /* config.aux */,
-				DA67FE6E14E4845900DB7CC9 /* config.h.in */,
-				DA67FE6F14E4845900DB7CC9 /* configure */,
-				DA67FE7014E4845900DB7CC9 /* FORMAT */,
-				DA67FE7114E4845900DB7CC9 /* lib */,
-				DA67FE8914E4845900DB7CC9 /* main.c */,
-				DA67FE8A14E4845900DB7CC9 /* Makefile.in */,
-				DA67FE8B14E4845900DB7CC9 /* patched_for_xcode */,
-				DA67FE8C14E4845900DB7CC9 /* scrypt.1 */,
-				DA67FE8D14E4845900DB7CC9 /* scrypt_platform.h */,
+				DA2C3C7E1BD92EB1001137B3 /* configure.ac */,
+				DA2C3C7F1BD92EB1001137B3 /* Makefile.am */,
 			);
-			path = scrypt;
-			sourceTree = "<group>";
+			name = autocrap;
+			path = "scrypt-1.2.0/autocrap";
+			sourceTree = SOURCE_ROOT;
 		};
-		DA67FE6A14E4845900DB7CC9 /* config.aux */ = {
+		DA2C3C801BD92EB1001137B3 /* config.aux */ = {
 			isa = PBXGroup;
 			children = (
-				DA67FE6B14E4845900DB7CC9 /* depcomp */,
-				DA67FE6C14E4845900DB7CC9 /* install-sh */,
-				DA67FE6D14E4845900DB7CC9 /* missing */,
+				DA2C3C811BD92EB1001137B3 /* compile */,
+				DA2C3C821BD92EB1001137B3 /* depcomp */,
+				DA2C3C831BD92EB1001137B3 /* install-sh */,
+				DA2C3C841BD92EB1001137B3 /* missing */,
 			);
-			path = config.aux;
-			sourceTree = "<group>";
+			name = config.aux;
+			path = "scrypt-1.2.0/config.aux";
+			sourceTree = SOURCE_ROOT;
 		};
-		DA67FE7114E4845900DB7CC9 /* lib */ = {
+		DA2C3C881BD92EB1001137B3 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				DA67FE7214E4845900DB7CC9 /* crypto */,
-				DA67FE7B14E4845900DB7CC9 /* README */,
-				DA67FE7C14E4845900DB7CC9 /* scryptenc */,
-				DA67FE8114E4845900DB7CC9 /* util */,
+				DA2C3C891BD92EB1001137B3 /* crypto */,
+				DA2C3C911BD92EB1001137B3 /* README */,
+				DA2C3C921BD92EB1001137B3 /* scryptenc */,
+				DA2C3C971BD92EB1001137B3 /* util */,
 			);
-			path = lib;
-			sourceTree = "<group>";
+			name = lib;
+			path = "scrypt-1.2.0/lib";
+			sourceTree = SOURCE_ROOT;
 		};
-		DA67FE7214E4845900DB7CC9 /* crypto */ = {
+		DA2C3C891BD92EB1001137B3 /* crypto */ = {
 			isa = PBXGroup;
 			children = (
-				DA67FE7314E4845900DB7CC9 /* crypto_aesctr.c */,
-				DA67FE7414E4845900DB7CC9 /* crypto_aesctr.h */,
-				DA67FE7514E4845900DB7CC9 /* crypto_scrypt-nosse.c */,
-				DA67FE7614E4845900DB7CC9 /* crypto_scrypt-ref.c */,
-				DA67FE7814E4845900DB7CC9 /* crypto_scrypt.h */,
-				DA67FE7914E4845900DB7CC9 /* sha256.c */,
-				DA67FE7A14E4845900DB7CC9 /* sha256.h */,
+				DA2C3C8A1BD92EB1001137B3 /* crypto_scrypt-ref.c */,
+				DA2C3C8B1BD92EB1001137B3 /* crypto_scrypt.c */,
+				DA2C3C8C1BD92EB1001137B3 /* crypto_scrypt.h */,
+				DA2C3C8D1BD92EB1001137B3 /* crypto_scrypt_smix.c */,
+				DA2C3C8E1BD92EB1001137B3 /* crypto_scrypt_smix.h */,
+				DA2C3C8F1BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c */,
+				DA2C3C901BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h */,
 			);
 			path = crypto;
 			sourceTree = "<group>";
 		};
-		DA67FE7C14E4845900DB7CC9 /* scryptenc */ = {
+		DA2C3C921BD92EB1001137B3 /* scryptenc */ = {
 			isa = PBXGroup;
 			children = (
-				DA67FE7D14E4845900DB7CC9 /* scryptenc.c */,
-				DA67FE7E14E4845900DB7CC9 /* scryptenc.h */,
-				DA67FE7F14E4845900DB7CC9 /* scryptenc_cpuperf.c */,
-				DA67FE8014E4845900DB7CC9 /* scryptenc_cpuperf.h */,
+				DA2C3C931BD92EB1001137B3 /* scryptenc.c */,
+				DA2C3C941BD92EB1001137B3 /* scryptenc.h */,
+				DA2C3C951BD92EB1001137B3 /* scryptenc_cpuperf.c */,
+				DA2C3C961BD92EB1001137B3 /* scryptenc_cpuperf.h */,
 			);
 			path = scryptenc;
 			sourceTree = "<group>";
 		};
-		DA67FE8114E4845900DB7CC9 /* util */ = {
+		DA2C3C971BD92EB1001137B3 /* util */ = {
 			isa = PBXGroup;
 			children = (
-				DA67FE8214E4845900DB7CC9 /* memlimit.c */,
-				DA67FE8314E4845900DB7CC9 /* memlimit.h */,
-				DA67FE8414E4845900DB7CC9 /* readpass.c */,
-				DA67FE8514E4845900DB7CC9 /* readpass.h */,
-				DA67FE8614E4845900DB7CC9 /* sysendian.h */,
-				DA67FE8714E4845900DB7CC9 /* warn.c */,
-				DA67FE8814E4845900DB7CC9 /* warn.h */,
+				DA2C3C981BD92EB1001137B3 /* memlimit.c */,
+				DA2C3C991BD92EB1001137B3 /* memlimit.h */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		DA2C3C9A1BD92EB1001137B3 /* libcperciva */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3C9B1BD92EB1001137B3 /* alg */,
+				DA2C3C9E1BD92EB1001137B3 /* COPYRIGHT */,
+				DA2C3C9F1BD92EB1001137B3 /* cpusupport */,
+				DA2C3CA81BD92EB1001137B3 /* crypto */,
+				DA2C3CB11BD92EB1001137B3 /* util */,
+			);
+			name = libcperciva;
+			path = "scrypt-1.2.0/libcperciva";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA2C3C9B1BD92EB1001137B3 /* alg */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3C9C1BD92EB1001137B3 /* sha256.c */,
+				DA2C3C9D1BD92EB1001137B3 /* sha256.h */,
+			);
+			path = alg;
+			sourceTree = "<group>";
+		};
+		DA2C3C9F1BD92EB1001137B3 /* cpusupport */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3CA01BD92EB1001137B3 /* Build */,
+				DA2C3CA51BD92EB1001137B3 /* cpusupport.h */,
+				DA2C3CA61BD92EB1001137B3 /* cpusupport_x86_aesni.c */,
+				DA2C3CA71BD92EB1001137B3 /* cpusupport_x86_sse2.c */,
+			);
+			path = cpusupport;
+			sourceTree = "<group>";
+		};
+		DA2C3CA01BD92EB1001137B3 /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3CA11BD92EB1001137B3 /* cpusupport-X86-AESNI.c */,
+				DA2C3CA21BD92EB1001137B3 /* cpusupport-X86-CPUID.c */,
+				DA2C3CA31BD92EB1001137B3 /* cpusupport-X86-SSE2.c */,
+				DA2C3CA41BD92EB1001137B3 /* cpusupport.sh */,
+			);
+			path = Build;
+			sourceTree = "<group>";
+		};
+		DA2C3CA81BD92EB1001137B3 /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3CA91BD92EB1001137B3 /* crypto_aes.c */,
+				DA2C3CAA1BD92EB1001137B3 /* crypto_aes.h */,
+				DA2C3CAB1BD92EB1001137B3 /* crypto_aes_aesni.c */,
+				DA2C3CAC1BD92EB1001137B3 /* crypto_aes_aesni.h */,
+				DA2C3CAD1BD92EB1001137B3 /* crypto_aesctr.c */,
+				DA2C3CAE1BD92EB1001137B3 /* crypto_aesctr.h */,
+				DA2C3CAF1BD92EB1001137B3 /* crypto_entropy.c */,
+				DA2C3CB01BD92EB1001137B3 /* crypto_entropy.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		DA2C3CB11BD92EB1001137B3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3CB21BD92EB1001137B3 /* entropy.c */,
+				DA2C3CB31BD92EB1001137B3 /* entropy.h */,
+				DA2C3CB41BD92EB1001137B3 /* insecure_memzero.c */,
+				DA2C3CB51BD92EB1001137B3 /* insecure_memzero.h */,
+				DA2C3CB61BD92EB1001137B3 /* readpass.c */,
+				DA2C3CB71BD92EB1001137B3 /* readpass.h */,
+				DA2C3CB81BD92EB1001137B3 /* sysendian.h */,
+				DA2C3CB91BD92EB1001137B3 /* warnp.c */,
+				DA2C3CBA1BD92EB1001137B3 /* warnp.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		DA67FE6914E4845900DB7CC9 /* scrypt */ = {
+			isa = PBXGroup;
+			children = (
+				DA2C3C7B1BD92EB1001137B3 /* config.h */,
+				DA2C3C7C1BD92EB1001137B3 /* patched_for_xcode */,
+				DA2C3C7D1BD92EB1001137B3 /* autocrap */,
+				DA2C3C801BD92EB1001137B3 /* config.aux */,
+				DA2C3C851BD92EB1001137B3 /* config.h.in */,
+				DA2C3C861BD92EB1001137B3 /* configure */,
+				DA2C3C871BD92EB1001137B3 /* FORMAT */,
+				DA2C3C881BD92EB1001137B3 /* lib */,
+				DA2C3C9A1BD92EB1001137B3 /* libcperciva */,
+				DA2C3CBB1BD92EB1001137B3 /* main.c */,
+				DA2C3CBC1BD92EB1001137B3 /* Makefile.in */,
+				DA2C3CBD1BD92EB1001137B3 /* scrypt_platform.h */,
+				DA2C3CBE1BD92EB1001137B3 /* scrypt.1 */,
+			);
+			path = scrypt;
 			sourceTree = "<group>";
 		};
 		DABD3EAF1711E81B00CF925C /* scrypt */ = {
@@ -472,6 +610,25 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2C3CC61BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h in Headers */,
+				DA2C3CCC1BD92EB1001137B3 /* memlimit.h in Headers */,
+				DA2C3CDE1BD92EB1001137B3 /* entropy.h in Headers */,
+				DA2C3CE51BD92EB1001137B3 /* warnp.h in Headers */,
+				DA2C3CE21BD92EB1001137B3 /* readpass.h in Headers */,
+				DA2C3CD81BD92EB1001137B3 /* crypto_aes_aesni.h in Headers */,
+				DA2C3CC41BD92EB1001137B3 /* crypto_scrypt_smix.h in Headers */,
+				DA2C3CE01BD92EB1001137B3 /* insecure_memzero.h in Headers */,
+				DA2C3CDC1BD92EB1001137B3 /* crypto_entropy.h in Headers */,
+				DA2C3CC21BD92EB1001137B3 /* crypto_scrypt.h in Headers */,
+				DA2C3CD21BD92EB1001137B3 /* cpusupport.h in Headers */,
+				DA2C3CBF1BD92EB1001137B3 /* config.h in Headers */,
+				DA2C3CE31BD92EB1001137B3 /* sysendian.h in Headers */,
+				DA2C3CCA1BD92EB1001137B3 /* scryptenc_cpuperf.h in Headers */,
+				DA2C3CD61BD92EB1001137B3 /* crypto_aes.h in Headers */,
+				DA2C3CC81BD92EB1001137B3 /* scryptenc.h in Headers */,
+				DA2C3CCE1BD92EB1001137B3 /* sha256.h in Headers */,
+				DA2C3CE71BD92EB1001137B3 /* scrypt_platform.h in Headers */,
+				DA2C3CDA1BD92EB1001137B3 /* crypto_aesctr.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -719,10 +876,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA67FE8E14E484A900DB7CC9 /* crypto_aesctr.c in Sources */,
-				DA67FE8F14E484B100DB7CC9 /* crypto_scrypt-nosse.c in Sources */,
-				DA67FE9014E484B100DB7CC9 /* crypto_scrypt-ref.c in Sources */,
-				DA67FE9214E484B100DB7CC9 /* sha256.c in Sources */,
+				DA2C3CDB1BD92EB1001137B3 /* crypto_entropy.c in Sources */,
+				DA2C3CD91BD92EB1001137B3 /* crypto_aesctr.c in Sources */,
+				DA2C3CDF1BD92EB1001137B3 /* insecure_memzero.c in Sources */,
+				DA2C3CC01BD92EB1001137B3 /* crypto_scrypt-ref.c in Sources */,
+				DA2C3CDD1BD92EB1001137B3 /* entropy.c in Sources */,
+				DA2C3CD71BD92EB1001137B3 /* crypto_aes_aesni.c in Sources */,
+				DA2C3CCD1BD92EB1001137B3 /* sha256.c in Sources */,
+				DA2C3CE41BD92EB1001137B3 /* warnp.c in Sources */,
+				DA2C3CE11BD92EB1001137B3 /* readpass.c in Sources */,
+				DA2C3CD51BD92EB1001137B3 /* crypto_aes.c in Sources */,
+				DA2C3CC11BD92EB1001137B3 /* crypto_scrypt.c in Sources */,
+				DA2C3CC31BD92EB1001137B3 /* crypto_scrypt_smix.c in Sources */,
+				DA2C3CD31BD92EB1001137B3 /* cpusupport_x86_aesni.c in Sources */,
+				DA2C3CD41BD92EB1001137B3 /* cpusupport_x86_sse2.c in Sources */,
+				DA2C3CC51BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -730,8 +898,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA67FE9314E484BB00DB7CC9 /* scryptenc.c in Sources */,
-				DA67FE9414E484BB00DB7CC9 /* scryptenc_cpuperf.c in Sources */,
+				DA2C3CE81BD92EBE001137B3 /* scryptenc.c in Sources */,
+				DA2C3CE91BD92EC2001137B3 /* scryptenc_cpuperf.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -739,9 +907,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA67FE9514E484C200DB7CC9 /* memlimit.c in Sources */,
-				DA67FE9614E484C200DB7CC9 /* readpass.c in Sources */,
-				DA67FE9714E484C200DB7CC9 /* warn.c in Sources */,
+				DA2C3CEA1BD92ECD001137B3 /* memlimit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

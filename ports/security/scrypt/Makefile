@@ -38,7 +38,7 @@
 # Package Information
 PACKAGE_NAME				= scrypt key derivation library
 PACKAGE_TARNAME				= scrypt
-PACKAGE_VERSION				= 1.1.6
+PACKAGE_VERSION				= 1.2.0
 PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
 PACKAGE_FILEEXE				= tgz
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
@@ -56,7 +56,7 @@ $(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
 scrypt/patched_for_xcode: $(PKGHEADERS)
-	for patch in build-aux/scrypt-1.1.6*.patch; do patch -N -p0 -i $${patch} || exit; done; :
+	for patch in build-aux/$(PACKAGE_DIR)*.patch; do patch -N -p0 -i $${patch} || exit; done; :
 	touch scrypt/patched_for_xcode
 
 ../../../include/scrypt/scryptenc.h: $(PKGHEADERS)
