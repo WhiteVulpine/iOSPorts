@@ -37,13 +37,13 @@
 
 # Package Information
 PACKAGE_NAME				= scrypt key derivation library
-PACKAGE_TARNAME				= libscrypt
-PACKAGE_VERSION				= b12b554
+PACKAGE_TARNAME				= scrypt
+PACKAGE_VERSION				= 1.2.0
 PACKAGE_DIR				= $(PACKAGE_TARNAME)-$(PACKAGE_VERSION)
-PACKAGE_FILEEXE				= tar.gz
+PACKAGE_FILEEXE				= tgz
 PACKAGE_FILE				= $(PACKAGE_DIR).$(PACKAGE_FILEEXE)
-PACKAGE_MD5				= $(PACKAGE_FILE).md5
-PACKAGE_URL				= https://ssl.masterpasswordapp.com/scrypt/$(PACKAGE_FILE)
+PACKAGE_SHA256				= $(PACKAGE_FILE).sha256
+PACKAGE_URL				= http://www.tarsnap.com/scrypt/$(PACKAGE_FILE)
 PACKAGE_WEBSITE				= http://www.tarsnap.com/scrypt.html
 PACKAGE_LICENSE_FILE			= build-aux/LICENSE
 
@@ -55,7 +55,7 @@ PKGHEADERS = $(PACKAGE_DIR)/config.h
 $(PKGHEADERS): $(PACKAGE_TARNAME)
 	FILE="build-aux/`basename ${@}`"; cp $${FILE} ${@};
 
-libscrypt/patched_for_xcode: $(PKGHEADERS)
+$(PACKAGE_DIR)/patched_for_xcode: $(PKGHEADERS)
 	for patch in build-aux/$(PACKAGE_DIR)*.patch; do patch -N -p0 -i $${patch} || exit; done; :
 	touch $(PACKAGE_DIR)/patched_for_xcode
 
@@ -65,7 +65,7 @@ libscrypt/patched_for_xcode: $(PKGHEADERS)
 ../../../include/scrypt/crypto_aesctr.h: $(PKGHEADERS)
 	cp $(PACKAGE_DIR)/libcperciva/*/*.h ../../../include/scrypt/
 
-extra-prep: libscrypt/patched_for_xcode $(PKGHEADERS) ../../../include/scrypt/scryptenc.h ../../../include/scrypt/crypto_aesctr.h
+extra-prep: $(PACKAGE_DIR)/patched_for_xcode $(PKGHEADERS) ../../../include/scrypt/scryptenc.h ../../../include/scrypt/crypto_aesctr.h
 
 clean-local:
 	/bin/rm -Rf include

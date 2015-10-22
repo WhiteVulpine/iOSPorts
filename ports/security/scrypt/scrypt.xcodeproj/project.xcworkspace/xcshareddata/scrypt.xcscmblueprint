@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "917334F59893EBD87714E5D8703B1F3AE47154F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "917334F59893EBD87714E5D8703B1F3AE47154F0" : 0,
+    "2A70319CE0F91B35406CA7D970AE7CB4957B0A75" : 0,
+    "4DDCFFD91B41F00326AD14553BD66CFD366ABD91" : 0,
+    "F788B28042EDBEF29EFE34687DA79A778C2CC260" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "44B2005F-98ED-4D47-822B-317DD042D44F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "917334F59893EBD87714E5D8703B1F3AE47154F0" : "iOSPorts",
+    "2A70319CE0F91B35406CA7D970AE7CB4957B0A75" : "",
+    "4DDCFFD91B41F00326AD14553BD66CFD366ABD91" : "",
+    "F788B28042EDBEF29EFE34687DA79A778C2CC260" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "scrypt",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ports\/security\/scrypt\/scrypt.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Lyndir\/Lyndir.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A70319CE0F91B35406CA7D970AE7CB4957B0A75"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Lyndir\/Pearl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DDCFFD91B41F00326AD14553BD66CFD366ABD91"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "git:\/\/github.com\/lhunath\/iOSPorts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "917334F59893EBD87714E5D8703B1F3AE47154F0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Lyndir\/MasterPassword.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F788B28042EDBEF29EFE34687DA79A778C2CC260"
+    }
+  ]
+}
