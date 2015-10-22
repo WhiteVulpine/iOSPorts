@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -46,13 +46,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A021D11D127B790700A30E69 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		A021D11F127B790C00A30E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
@@ -74,13 +67,6 @@
 			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
 			remoteInfo = crypto;
 		};
-		A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A05123C51278D7F500DE46C4 /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4;
-			remoteInfo = test;
-		};
 		A0FB53DD126E52DB0057FEE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -95,7 +81,7 @@
 		A05123C51278D7F500DE46C4 /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = SOURCE_ROOT; };
 		A05124301278D8E500DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "../cyrus-sasl-2.1.23/Makefile"; sourceTree = "<group>"; };
 		A051243A1278D9C400DE46C4 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; name = Makefile; path = "cyrus-sasl-2.1.23/plugins/Makefile"; sourceTree = SOURCE_ROOT; };
-		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 8; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; tabWidth = 8; };
+		A0FB53E4126E53AB0057FEE9 /* Makefile */ = {isa = PBXFileReference; explicitFileType = sourcecode.make; fileEncoding = 4; indentWidth = 8; path = Makefile; sourceTree = "<group>"; tabWidth = 8; usesTabs = 1; };
 		A0FB53E6126E53C30057FEE9 /* cyrus-sasl-2.1.23.tar.gz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cyrus-sasl-2.1.23.tar.gz.md5"; sourceTree = "<group>"; };
 		A0FB57E5126E55630057FEE9 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
 		A0FB57E6126E55630057FEE9 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
@@ -782,7 +768,6 @@
 			children = (
 				A05123CE1278D7F500DE46C4 /* libssl.a */,
 				A05123D01278D7F500DE46C4 /* libcrypto.a */,
-				A05123D21278D7F500DE46C4 /* test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1956,6 +1941,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "";
 			dependencies = (
 			);
 			name = "Makefile-cyrus-sasl";
@@ -1977,7 +1963,6 @@
 			);
 			dependencies = (
 				A0FB53DE126E52DB0057FEE9 /* PBXTargetDependency */,
-				A021D11E127B790700A30E69 /* PBXTargetDependency */,
 				A021D120127B790C00A30E69 /* PBXTargetDependency */,
 			);
 			name = sasl2;
@@ -1991,10 +1976,11 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastUpgradeCheck = 0430;
 				ORGANIZATIONNAME = "Bindle Binaries";
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Cyrus SASL" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -2033,13 +2019,6 @@
 			fileType = archive.ar;
 			path = libcrypto.a;
 			remoteRef = A05123CF1278D7F500DE46C4 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A05123D21278D7F500DE46C4 /* test.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = test.app;
-			remoteRef = A05123D11278D7F500DE46C4 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -2090,11 +2069,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A021D11E127B790700A30E69 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = A021D11D127B790700A30E69 /* PBXContainerItemProxy */;
-		};
 		A021D120127B790C00A30E69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ssl;
@@ -2112,17 +2086,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				DSTROOT = /tmp/sasl2.dst;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -2130,23 +2104,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				DSTROOT = /tmp/sasl2.dst;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = sasl2_Prefix.pch;
+				GCC_THUMB_SUPPORT = NO;
 				INSTALL_PATH = /usr/local/lib;
 				PRODUCT_NAME = sasl2;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2156,9 +2130,8 @@
 					"cyrus-sasl",
 					../../../include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -2166,9 +2139,8 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
@@ -2178,9 +2150,8 @@
 					"cyrus-sasl",
 					../../../include,
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "-ObjC";
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -2191,6 +2162,7 @@
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
 			};
 			name = Debug;
@@ -2200,7 +2172,7 @@
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_THUMB_SUPPORT = NO;
 				PRODUCT_NAME = Makefile;
 				ZERO_LINK = NO;
 			};

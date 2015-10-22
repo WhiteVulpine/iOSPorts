@@ -6,100 +6,34 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		A0511DCE127788A100DE46C4 /* scrypt */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "scrypt" */;
-			buildPhases = (
-			);
-			dependencies = (
-				DA67FE5F14E4836300DB7CC9 /* PBXTargetDependency */,
-				A0511DD2127788A800DE46C4 /* PBXTargetDependency */,
-				A0511DD4127788A800DE46C4 /* PBXTargetDependency */,
-			);
-			name = scrypt;
-			productName = OpenSSL;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA1A13F214E487D900BCFFBE /* libcrypto.a */; };
 		DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DA67FE5D14E4834300DB7CC9 /* libutil.a */; };
-		DA2C3CBF1BD92EB1001137B3 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C7B1BD92EB1001137B3 /* config.h */; };
-		DA2C3CC01BD92EB1001137B3 /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8A1BD92EB1001137B3 /* crypto_scrypt-ref.c */; };
-		DA2C3CC11BD92EB1001137B3 /* crypto_scrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8B1BD92EB1001137B3 /* crypto_scrypt.c */; };
-		DA2C3CC21BD92EB1001137B3 /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C8C1BD92EB1001137B3 /* crypto_scrypt.h */; };
-		DA2C3CC31BD92EB1001137B3 /* crypto_scrypt_smix.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8D1BD92EB1001137B3 /* crypto_scrypt_smix.c */; };
-		DA2C3CC41BD92EB1001137B3 /* crypto_scrypt_smix.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C8E1BD92EB1001137B3 /* crypto_scrypt_smix.h */; };
-		DA2C3CC51BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C8F1BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c */; };
-		DA2C3CC61BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C901BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h */; };
-		DA2C3CC81BD92EB1001137B3 /* scryptenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C941BD92EB1001137B3 /* scryptenc.h */; };
-		DA2C3CCA1BD92EB1001137B3 /* scryptenc_cpuperf.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C961BD92EB1001137B3 /* scryptenc_cpuperf.h */; };
-		DA2C3CCC1BD92EB1001137B3 /* memlimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C991BD92EB1001137B3 /* memlimit.h */; };
-		DA2C3CCD1BD92EB1001137B3 /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C9C1BD92EB1001137B3 /* sha256.c */; };
-		DA2C3CCE1BD92EB1001137B3 /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3C9D1BD92EB1001137B3 /* sha256.h */; };
-		DA2C3CD21BD92EB1001137B3 /* cpusupport.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CA51BD92EB1001137B3 /* cpusupport.h */; };
-		DA2C3CD31BD92EB1001137B3 /* cpusupport_x86_aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA61BD92EB1001137B3 /* cpusupport_x86_aesni.c */; };
-		DA2C3CD41BD92EB1001137B3 /* cpusupport_x86_sse2.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA71BD92EB1001137B3 /* cpusupport_x86_sse2.c */; };
-		DA2C3CD51BD92EB1001137B3 /* crypto_aes.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CA91BD92EB1001137B3 /* crypto_aes.c */; };
-		DA2C3CD61BD92EB1001137B3 /* crypto_aes.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAA1BD92EB1001137B3 /* crypto_aes.h */; };
-		DA2C3CD71BD92EB1001137B3 /* crypto_aes_aesni.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAB1BD92EB1001137B3 /* crypto_aes_aesni.c */; };
-		DA2C3CD81BD92EB1001137B3 /* crypto_aes_aesni.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAC1BD92EB1001137B3 /* crypto_aes_aesni.h */; };
-		DA2C3CD91BD92EB1001137B3 /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAD1BD92EB1001137B3 /* crypto_aesctr.c */; };
-		DA2C3CDA1BD92EB1001137B3 /* crypto_aesctr.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CAE1BD92EB1001137B3 /* crypto_aesctr.h */; };
-		DA2C3CDB1BD92EB1001137B3 /* crypto_entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CAF1BD92EB1001137B3 /* crypto_entropy.c */; };
-		DA2C3CDC1BD92EB1001137B3 /* crypto_entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB01BD92EB1001137B3 /* crypto_entropy.h */; };
-		DA2C3CDD1BD92EB1001137B3 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB21BD92EB1001137B3 /* entropy.c */; };
-		DA2C3CDE1BD92EB1001137B3 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB31BD92EB1001137B3 /* entropy.h */; };
-		DA2C3CDF1BD92EB1001137B3 /* insecure_memzero.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB41BD92EB1001137B3 /* insecure_memzero.c */; };
-		DA2C3CE01BD92EB1001137B3 /* insecure_memzero.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB51BD92EB1001137B3 /* insecure_memzero.h */; };
-		DA2C3CE11BD92EB1001137B3 /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB61BD92EB1001137B3 /* readpass.c */; };
-		DA2C3CE21BD92EB1001137B3 /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB71BD92EB1001137B3 /* readpass.h */; };
-		DA2C3CE31BD92EB1001137B3 /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CB81BD92EB1001137B3 /* sysendian.h */; };
-		DA2C3CE41BD92EB1001137B3 /* warnp.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3CB91BD92EB1001137B3 /* warnp.c */; };
-		DA2C3CE51BD92EB1001137B3 /* warnp.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CBA1BD92EB1001137B3 /* warnp.h */; };
-		DA2C3CE71BD92EB1001137B3 /* scrypt_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = DA2C3CBD1BD92EB1001137B3 /* scrypt_platform.h */; };
-		DA2C3CE81BD92EBE001137B3 /* scryptenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C931BD92EB1001137B3 /* scryptenc.c */; };
-		DA2C3CE91BD92EC2001137B3 /* scryptenc_cpuperf.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C951BD92EB1001137B3 /* scryptenc_cpuperf.c */; };
-		DA2C3CEA1BD92ECD001137B3 /* memlimit.c in Sources */ = {isa = PBXBuildFile; fileRef = DA2C3C981BD92EB1001137B3 /* memlimit.c */; };
+		DA6773261A43E5B8004F356A /* liblibcperciva.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE52AFC1A26E82F00741CCE /* liblibcperciva.a */; };
 		DA8251C514E5CDF7008EBC5A /* libscryptcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A0511C5A127770FD00DE46C4 /* libscryptcrypto.a */; };
 		DABD3EAB1711E80800CF925C /* libscryptenc-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABD3EA91711E80800CF925C /* libscryptenc-ios.a */; };
 		DABD3EAE1711E80800CF925C /* libscryptenc-osx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DABD3EAA1711E80800CF925C /* libscryptenc-osx.a */; };
-		DABD3ECD171227EA00CF925C /* crypto_aesctr.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB01711E81B00CF925C /* crypto_aesctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ECE171227EA00CF925C /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB11711E81B00CF925C /* crypto_scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ECF171227EA00CF925C /* memlimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB21711E81B00CF925C /* memlimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED0171227EA00CF925C /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB31711E81B00CF925C /* readpass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED1171227EA00CF925C /* scryptenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB41711E81B00CF925C /* scryptenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED2171227EA00CF925C /* scryptenc_cpuperf.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB51711E81B00CF925C /* scryptenc_cpuperf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED3171227EA00CF925C /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB61711E81B00CF925C /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED4171227EA00CF925C /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB71711E81B00CF925C /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3ED5171227EA00CF925C /* warn.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB81711E81B00CF925C /* warn.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F691712288700CF925C /* crypto_aesctr.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB01711E81B00CF925C /* crypto_aesctr.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6A1712288700CF925C /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB11711E81B00CF925C /* crypto_scrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6B1712288700CF925C /* memlimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB21711E81B00CF925C /* memlimit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6C1712288700CF925C /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB31711E81B00CF925C /* readpass.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6D1712288700CF925C /* scryptenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB41711E81B00CF925C /* scryptenc.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6E1712288700CF925C /* scryptenc_cpuperf.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB51711E81B00CF925C /* scryptenc_cpuperf.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F6F1712288700CF925C /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB61711E81B00CF925C /* sha256.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F701712288700CF925C /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB71711E81B00CF925C /* sysendian.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DABD3F711712288700CF925C /* warn.h in Headers */ = {isa = PBXBuildFile; fileRef = DABD3EB81711E81B00CF925C /* warn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE52AEE1A26E77800741CCE /* crypto_scrypt-nosse.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52ACC1A26E73000741CCE /* crypto_scrypt-nosse.c */; };
+		DAE52AEF1A26E77800741CCE /* crypto_scrypt-ref.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52ACD1A26E73000741CCE /* crypto_scrypt-ref.c */; };
+		DAE52AF11A26E77800741CCE /* crypto_scrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52ACF1A26E73000741CCE /* crypto_scrypt.h */; };
+		DAE52AF21A26E77E00741CCE /* scryptenc.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52AD21A26E73000741CCE /* scryptenc.c */; };
+		DAE52AF31A26E77E00741CCE /* scryptenc.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AD31A26E73000741CCE /* scryptenc.h */; };
+		DAE52AF41A26E77E00741CCE /* scryptenc_cpuperf.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52AD41A26E73000741CCE /* scryptenc_cpuperf.c */; };
+		DAE52AF51A26E77E00741CCE /* scryptenc_cpuperf.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AD51A26E73000741CCE /* scryptenc_cpuperf.h */; };
+		DAE52AF61A26E78500741CCE /* memlimit.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52AD71A26E73000741CCE /* memlimit.c */; };
+		DAE52AF71A26E78500741CCE /* memlimit.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AD81A26E73000741CCE /* memlimit.h */; };
+		DAE52B011A26E82F00741CCE /* libcperciva.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE52B001A26E82F00741CCE /* libcperciva.m */; };
+		DAE52B131A26E99500741CCE /* sha256.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52ADB1A26E73000741CCE /* sha256.c */; };
+		DAE52B141A26E99B00741CCE /* crypto_aesctr.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52ADF1A26E73000741CCE /* crypto_aesctr.c */; };
+		DAE52B151A26E99E00741CCE /* readpass.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52AE21A26E73000741CCE /* readpass.c */; };
+		DAE52B161A26E9A100741CCE /* warnp.c in Sources */ = {isa = PBXBuildFile; fileRef = DAE52AE51A26E73000741CCE /* warnp.c */; };
+		DAE52B181A26E9EC00741CCE /* sha256.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52ADC1A26E73000741CCE /* sha256.h */; };
+		DAE52B191A26E9EC00741CCE /* crypto_aesctr.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AE01A26E73000741CCE /* crypto_aesctr.h */; };
+		DAE52B1A1A26E9EC00741CCE /* readpass.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AE31A26E73000741CCE /* readpass.h */; };
+		DAE52B1B1A26E9EC00741CCE /* sysendian.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AE41A26E73000741CCE /* sysendian.h */; };
+		DAE52B1C1A26E9EC00741CCE /* warnp.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE52AE61A26E73000741CCE /* warnp.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D2AAC07D0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
 		A0511DF0127788F600DE46C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -114,40 +48,12 @@
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = Makefile;
 		};
-		DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D2AAC07E0554694100DB518D;
-			remoteInfo = ssl;
-		};
-		DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511C5A127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
-		DA1A13F314E487D900BCFFBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A0511DFF1277895300DE46C4;
-			remoteInfo = test;
-		};
 		DA67FE2A14E4834300DB7CC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = Makefile;
-		};
-		DA67FE5E14E4836300DB7CC9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
-			remoteInfo = util;
 		};
 		DA6E4A33155E580D00CFF2D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -163,34 +69,6 @@
 			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
 			remoteInfo = util;
 		};
-		DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511C51127770FD00DE46C4;
-			remoteInfo = crypto;
-		};
-		DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A0511DED127788EC00DE46C4;
-			remoteInfo = "Makefile-openssl";
-		};
-		DABD3E941711E7D700CF925C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DABD3DD31711E61700CF925C;
-			remoteInfo = "openssl-bin-ios";
-		};
-		DABD3E961711E7D700CF925C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DABD3DEB1711E6A100CF925C;
-			remoteInfo = "openssl-bin-osx";
-		};
 		DABD3EB91711E84500CF925C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -204,6 +82,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A0511DED127788EC00DE46C4;
 			remoteInfo = "Makefile-scrypt";
+		};
+		DAE52B1D1A26EA2F00741CCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAE52AFB1A26E82F00741CCE;
+			remoteInfo = libcperciva;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -236,7 +121,6 @@
 		A05123771278ACDE00DE46C4 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2AAC07E0554694100DB518D /* libscryptenc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libscryptenc.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openssl.xcodeproj; path = ../openssl/openssl.xcodeproj; sourceTree = "<group>"; };
 		DA1A141614E48E9F00BCFFBE /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		DA2C3C7B1BD92EB1001137B3 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = "scrypt-1.2.0/config.h"; sourceTree = SOURCE_ROOT; };
 		DA2C3C7C1BD92EB1001137B3 /* patched_for_xcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = patched_for_xcode; path = "scrypt-1.2.0/patched_for_xcode"; sourceTree = SOURCE_ROOT; };
@@ -298,21 +182,57 @@
 		DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "configure-wrapper.log"; sourceTree = "<group>"; };
 		DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "configure-wrapper.sh"; sourceTree = "<group>"; };
 		DA67FE6214E483BD00DB7CC9 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.patch"; sourceTree = "<group>"; };
 		DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-1.1.6.tgz.md5"; sourceTree = "<group>"; };
 		DABD3E841711E7D600CF925C /* libscrypt-bin-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libscrypt-bin-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD3E9D1711E7E000CF925C /* libscrypt-bin-osx.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libscrypt-bin-osx.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DABD3EA91711E80800CF925C /* libscryptenc-ios.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libscryptenc-ios.a"; sourceTree = "<group>"; };
 		DABD3EAA1711E80800CF925C /* libscryptenc-osx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libscryptenc-osx.a"; sourceTree = "<group>"; };
-		DABD3EB01711E81B00CF925C /* crypto_aesctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aesctr.h; sourceTree = "<group>"; };
-		DABD3EB11711E81B00CF925C /* crypto_scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
-		DABD3EB21711E81B00CF925C /* memlimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
-		DABD3EB31711E81B00CF925C /* readpass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readpass.h; sourceTree = "<group>"; };
-		DABD3EB41711E81B00CF925C /* scryptenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
-		DABD3EB51711E81B00CF925C /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
-		DABD3EB61711E81B00CF925C /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
-		DABD3EB71711E81B00CF925C /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
-		DABD3EB81711E81B00CF925C /* warn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warn.h; sourceTree = "<group>"; };
+		DAE52ABC1A269ED700741CCE /* crypto_scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		DAE52ABD1A269ED700741CCE /* memlimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
+		DAE52ABE1A269ED700741CCE /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
+		DAE52ABF1A269ED700741CCE /* scryptenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
+		DAE52AC11A26E73000741CCE /* acscrypt.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acscrypt.m4; sourceTree = "<group>"; };
+		DAE52AC31A26E73000741CCE /* acscrypt.m4 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = acscrypt.m4; sourceTree = "<group>"; };
+		DAE52AC41A26E73000741CCE /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		DAE52AC51A26E73000741CCE /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		DAE52AC61A26E73000741CCE /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		DAE52AC71A26E73000741CCE /* config_freebsd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config_freebsd.h; sourceTree = "<group>"; };
+		DAE52AC81A26E73000741CCE /* configure.ac */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = configure.ac; sourceTree = "<group>"; };
+		DAE52AC91A26E73000741CCE /* FORMAT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FORMAT; sourceTree = "<group>"; };
+		DAE52ACC1A26E73000741CCE /* crypto_scrypt-nosse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-nosse.c"; sourceTree = "<group>"; };
+		DAE52ACD1A26E73000741CCE /* crypto_scrypt-ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-ref.c"; sourceTree = "<group>"; };
+		DAE52ACE1A26E73000741CCE /* crypto_scrypt-sse.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "crypto_scrypt-sse.c"; sourceTree = "<group>"; };
+		DAE52ACF1A26E73000741CCE /* crypto_scrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_scrypt.h; sourceTree = "<group>"; };
+		DAE52AD01A26E73000741CCE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		DAE52AD21A26E73000741CCE /* scryptenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scryptenc.c; sourceTree = "<group>"; };
+		DAE52AD31A26E73000741CCE /* scryptenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc.h; sourceTree = "<group>"; };
+		DAE52AD41A26E73000741CCE /* scryptenc_cpuperf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scryptenc_cpuperf.c; sourceTree = "<group>"; };
+		DAE52AD51A26E73000741CCE /* scryptenc_cpuperf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scryptenc_cpuperf.h; sourceTree = "<group>"; };
+		DAE52AD71A26E73000741CCE /* memlimit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memlimit.c; sourceTree = "<group>"; };
+		DAE52AD81A26E73000741CCE /* memlimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memlimit.h; sourceTree = "<group>"; };
+		DAE52ADB1A26E73000741CCE /* sha256.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha256.c; sourceTree = "<group>"; };
+		DAE52ADC1A26E73000741CCE /* sha256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha256.h; sourceTree = "<group>"; };
+		DAE52ADD1A26E73000741CCE /* COPYRIGHT */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYRIGHT; sourceTree = "<group>"; };
+		DAE52ADF1A26E73000741CCE /* crypto_aesctr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto_aesctr.c; sourceTree = "<group>"; };
+		DAE52AE01A26E73000741CCE /* crypto_aesctr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypto_aesctr.h; sourceTree = "<group>"; };
+		DAE52AE21A26E73000741CCE /* readpass.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readpass.c; sourceTree = "<group>"; };
+		DAE52AE31A26E73000741CCE /* readpass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readpass.h; sourceTree = "<group>"; };
+		DAE52AE41A26E73000741CCE /* sysendian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sysendian.h; sourceTree = "<group>"; };
+		DAE52AE51A26E73000741CCE /* warnp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = warnp.c; sourceTree = "<group>"; };
+		DAE52AE61A26E73000741CCE /* warnp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = warnp.h; sourceTree = "<group>"; };
+		DAE52AE71A26E73000741CCE /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		DAE52AE81A26E73000741CCE /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		DAE52AE91A26E73000741CCE /* Makefile.am */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Makefile.am; sourceTree = "<group>"; };
+		DAE52AEA1A26E73000741CCE /* patched_for_xcode */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = patched_for_xcode; sourceTree = "<group>"; };
+		DAE52AEB1A26E73000741CCE /* scrypt-version */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "scrypt-version"; sourceTree = "<group>"; };
+		DAE52AEC1A26E73000741CCE /* scrypt.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = scrypt.1; sourceTree = "<group>"; };
+		DAE52AED1A26E73000741CCE /* scrypt_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scrypt_platform.h; sourceTree = "<group>"; };
+		DAE52AFC1A26E82F00741CCE /* liblibcperciva.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = liblibcperciva.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAE52AFE1A26E82F00741CCE /* libcperciva.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libcperciva.h; sourceTree = "<group>"; };
+		DAE52B001A26E82F00741CCE /* libcperciva.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = libcperciva.m; sourceTree = "<group>"; };
+		DAE52B0C1A26E82F00741CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAE8E64A1985763500416A0F /* scrypt-1.1.6-sha256.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "scrypt-1.1.6-sha256.patch"; sourceTree = "<group>"; };
+		DAE8E64B1985763500416A0F /* scrypt-1.1.6-pickparams.patch */ = {isa = PBXFileReference; lastKnownFileType = text; path = "scrypt-1.1.6-pickparams.patch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -320,8 +240,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6773261A43E5B8004F356A /* liblibcperciva.a in Frameworks */,
 				DA1A142614E4914E00BCFFBE /* libutil.a in Frameworks */,
-				DA1A140614E48A7600BCFFBE /* libcrypto.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +276,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAE52AF91A26E82F00741CCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -367,6 +294,7 @@
 				DA67FE5D14E4834300DB7CC9 /* libutil.a */,
 				DABD3E841711E7D600CF925C /* libscrypt-bin-ios.a */,
 				DABD3E9D1711E7E000CF925C /* libscrypt-bin-osx.a */,
+				DAE52AFC1A26E82F00741CCE /* liblibcperciva.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,11 +305,12 @@
 				DABD3EAF1711E81B00CF925C /* scrypt */,
 				DABD3EA91711E80800CF925C /* libscryptenc-ios.a */,
 				DABD3EAA1711E80800CF925C /* libscryptenc-osx.a */,
-				DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */,
 				A05123771278ACDE00DE46C4 /* README */,
 				A0511321127769BB00DE46C4 /* Makefile */,
 				A051131E127769BB00DE46C4 /* build-aux */,
-				DA67FE6914E4845900DB7CC9 /* scrypt */,
+				DAE52AC01A26E73000741CCE /* libscrypt */,
+				DAE52AFD1A26E82F00741CCE /* libcperciva */,
+				DAE52B0A1A26E82F00741CCE /* libcpercivaTests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -405,100 +334,75 @@
 				DA67FE6014E483BD00DB7CC9 /* configure-wrapper.log */,
 				DA67FE6114E483BD00DB7CC9 /* configure-wrapper.sh */,
 				DA67FE6214E483BD00DB7CC9 /* LICENSE */,
-				DA67FE6314E483BD00DB7CC9 /* scrypt-1.1.6.patch */,
 				DA67FE6414E483BD00DB7CC9 /* scrypt-1.1.6.tgz.md5 */,
+				DAE8E64A1985763500416A0F /* scrypt-1.1.6-sha256.patch */,
+				DAE8E64B1985763500416A0F /* scrypt-1.1.6-pickparams.patch */,
 			);
 			path = "build-aux";
 			sourceTree = "<group>";
 		};
-		DA1A13E414E487D800BCFFBE /* Products */ = {
+		DABD3EAF1711E81B00CF925C /* scrypt */ = {
 			isa = PBXGroup;
 			children = (
-				DA1A13F014E487D900BCFFBE /* libssl.a */,
-				DA1A13F214E487D900BCFFBE /* libcrypto.a */,
-				DA1A13F414E487D900BCFFBE /* test.app */,
-				DABD3E951711E7D700CF925C /* libopenssl-bin-ios.a */,
-				DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */,
+				DAE52ABC1A269ED700741CCE /* crypto_scrypt.h */,
+				DAE52ABD1A269ED700741CCE /* memlimit.h */,
+				DAE52ABE1A269ED700741CCE /* scryptenc_cpuperf.h */,
+				DAE52ABF1A269ED700741CCE /* scryptenc.h */,
 			);
-			name = Products;
+			name = scrypt;
+			path = ../../../include/scrypt;
 			sourceTree = "<group>";
 		};
-		DA2C3C7D1BD92EB1001137B3 /* autocrap */ = {
+		DAE52AC01A26E73000741CCE /* libscrypt */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3C7E1BD92EB1001137B3 /* configure.ac */,
-				DA2C3C7F1BD92EB1001137B3 /* Makefile.am */,
+				DAE52AC11A26E73000741CCE /* acscrypt.m4 */,
+				DAE52AC21A26E73000741CCE /* autocrap */,
+				DAE52AC61A26E73000741CCE /* config.h */,
+				DAE52AC71A26E73000741CCE /* config_freebsd.h */,
+				DAE52AC81A26E73000741CCE /* configure.ac */,
+				DAE52AC91A26E73000741CCE /* FORMAT */,
+				DAE52ACA1A26E73000741CCE /* lib */,
+				DAE52AD91A26E73000741CCE /* libcperciva */,
+				DAE52AE71A26E73000741CCE /* main.c */,
+				DAE52AE81A26E73000741CCE /* Makefile */,
+				DAE52AE91A26E73000741CCE /* Makefile.am */,
+				DAE52AEA1A26E73000741CCE /* patched_for_xcode */,
+				DAE52AEB1A26E73000741CCE /* scrypt-version */,
+				DAE52AEC1A26E73000741CCE /* scrypt.1 */,
+				DAE52AED1A26E73000741CCE /* scrypt_platform.h */,
 			);
-			name = autocrap;
-			path = "scrypt-1.2.0/autocrap";
-			sourceTree = SOURCE_ROOT;
-		};
-		DA2C3C801BD92EB1001137B3 /* config.aux */ = {
-			isa = PBXGroup;
-			children = (
-				DA2C3C811BD92EB1001137B3 /* compile */,
-				DA2C3C821BD92EB1001137B3 /* depcomp */,
-				DA2C3C831BD92EB1001137B3 /* install-sh */,
-				DA2C3C841BD92EB1001137B3 /* missing */,
-			);
-			name = config.aux;
-			path = "scrypt-1.2.0/config.aux";
-			sourceTree = SOURCE_ROOT;
-		};
-		DA2C3C881BD92EB1001137B3 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				DA2C3C891BD92EB1001137B3 /* crypto */,
-				DA2C3C911BD92EB1001137B3 /* README */,
-				DA2C3C921BD92EB1001137B3 /* scryptenc */,
-				DA2C3C971BD92EB1001137B3 /* util */,
-			);
-			name = lib;
-			path = "scrypt-1.2.0/lib";
-			sourceTree = SOURCE_ROOT;
-		};
-		DA2C3C891BD92EB1001137B3 /* crypto */ = {
-			isa = PBXGroup;
-			children = (
-				DA2C3C8A1BD92EB1001137B3 /* crypto_scrypt-ref.c */,
-				DA2C3C8B1BD92EB1001137B3 /* crypto_scrypt.c */,
-				DA2C3C8C1BD92EB1001137B3 /* crypto_scrypt.h */,
-				DA2C3C8D1BD92EB1001137B3 /* crypto_scrypt_smix.c */,
-				DA2C3C8E1BD92EB1001137B3 /* crypto_scrypt_smix.h */,
-				DA2C3C8F1BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c */,
-				DA2C3C901BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h */,
-			);
-			path = crypto;
+			path = libscrypt;
 			sourceTree = "<group>";
 		};
-		DA2C3C921BD92EB1001137B3 /* scryptenc */ = {
+		DAE52AC21A26E73000741CCE /* autocrap */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3C931BD92EB1001137B3 /* scryptenc.c */,
-				DA2C3C941BD92EB1001137B3 /* scryptenc.h */,
-				DA2C3C951BD92EB1001137B3 /* scryptenc_cpuperf.c */,
-				DA2C3C961BD92EB1001137B3 /* scryptenc_cpuperf.h */,
+				DAE52AC31A26E73000741CCE /* acscrypt.m4 */,
+				DAE52AC41A26E73000741CCE /* configure.ac */,
+				DAE52AC51A26E73000741CCE /* Makefile.am */,
 			);
-			path = scryptenc;
+			path = autocrap;
 			sourceTree = "<group>";
 		};
-		DA2C3C971BD92EB1001137B3 /* util */ = {
+		DAE52ACA1A26E73000741CCE /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3C981BD92EB1001137B3 /* memlimit.c */,
-				DA2C3C991BD92EB1001137B3 /* memlimit.h */,
+				DAE52ACB1A26E73000741CCE /* crypto */,
+				DAE52AD01A26E73000741CCE /* README */,
+				DAE52AD11A26E73000741CCE /* scryptenc */,
+				DAE52AD61A26E73000741CCE /* util */,
 			);
 			path = util;
 			sourceTree = "<group>";
 		};
-		DA2C3C9A1BD92EB1001137B3 /* libcperciva */ = {
+		DAE52ACB1A26E73000741CCE /* crypto */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3C9B1BD92EB1001137B3 /* alg */,
-				DA2C3C9E1BD92EB1001137B3 /* COPYRIGHT */,
-				DA2C3C9F1BD92EB1001137B3 /* cpusupport */,
-				DA2C3CA81BD92EB1001137B3 /* crypto */,
-				DA2C3CB11BD92EB1001137B3 /* util */,
+				DAE52ACC1A26E73000741CCE /* crypto_scrypt-nosse.c */,
+				DAE52ACD1A26E73000741CCE /* crypto_scrypt-ref.c */,
+				DAE52ACE1A26E73000741CCE /* crypto_scrypt-sse.c */,
+				DAE52ACF1A26E73000741CCE /* crypto_scrypt.h */,
 			);
 			name = libcperciva;
 			path = "scrypt-1.2.0/libcperciva";
@@ -513,13 +417,13 @@
 			path = alg;
 			sourceTree = "<group>";
 		};
-		DA2C3C9F1BD92EB1001137B3 /* cpusupport */ = {
+		DAE52AD11A26E73000741CCE /* scryptenc */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3CA01BD92EB1001137B3 /* Build */,
-				DA2C3CA51BD92EB1001137B3 /* cpusupport.h */,
-				DA2C3CA61BD92EB1001137B3 /* cpusupport_x86_aesni.c */,
-				DA2C3CA71BD92EB1001137B3 /* cpusupport_x86_sse2.c */,
+				DAE52AD21A26E73000741CCE /* scryptenc.c */,
+				DAE52AD31A26E73000741CCE /* scryptenc.h */,
+				DAE52AD41A26E73000741CCE /* scryptenc_cpuperf.c */,
+				DAE52AD51A26E73000741CCE /* scryptenc_cpuperf.h */,
 			);
 			path = cpusupport;
 			sourceTree = "<group>";
@@ -550,57 +454,79 @@
 			path = crypto;
 			sourceTree = "<group>";
 		};
-		DA2C3CB11BD92EB1001137B3 /* util */ = {
+		DAE52AD61A26E73000741CCE /* util */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3CB21BD92EB1001137B3 /* entropy.c */,
-				DA2C3CB31BD92EB1001137B3 /* entropy.h */,
-				DA2C3CB41BD92EB1001137B3 /* insecure_memzero.c */,
-				DA2C3CB51BD92EB1001137B3 /* insecure_memzero.h */,
-				DA2C3CB61BD92EB1001137B3 /* readpass.c */,
-				DA2C3CB71BD92EB1001137B3 /* readpass.h */,
-				DA2C3CB81BD92EB1001137B3 /* sysendian.h */,
-				DA2C3CB91BD92EB1001137B3 /* warnp.c */,
-				DA2C3CBA1BD92EB1001137B3 /* warnp.h */,
+				DAE52AD71A26E73000741CCE /* memlimit.c */,
+				DAE52AD81A26E73000741CCE /* memlimit.h */,
 			);
 			path = util;
 			sourceTree = "<group>";
 		};
-		DA67FE6914E4845900DB7CC9 /* scrypt */ = {
+		DAE52AD91A26E73000741CCE /* libcperciva */ = {
 			isa = PBXGroup;
 			children = (
-				DA2C3C7B1BD92EB1001137B3 /* config.h */,
-				DA2C3C7C1BD92EB1001137B3 /* patched_for_xcode */,
-				DA2C3C7D1BD92EB1001137B3 /* autocrap */,
-				DA2C3C801BD92EB1001137B3 /* config.aux */,
-				DA2C3C851BD92EB1001137B3 /* config.h.in */,
-				DA2C3C861BD92EB1001137B3 /* configure */,
-				DA2C3C871BD92EB1001137B3 /* FORMAT */,
-				DA2C3C881BD92EB1001137B3 /* lib */,
-				DA2C3C9A1BD92EB1001137B3 /* libcperciva */,
-				DA2C3CBB1BD92EB1001137B3 /* main.c */,
-				DA2C3CBC1BD92EB1001137B3 /* Makefile.in */,
-				DA2C3CBD1BD92EB1001137B3 /* scrypt_platform.h */,
-				DA2C3CBE1BD92EB1001137B3 /* scrypt.1 */,
+				DAE52ADA1A26E73000741CCE /* alg */,
+				DAE52ADD1A26E73000741CCE /* COPYRIGHT */,
+				DAE52ADE1A26E73000741CCE /* crypto */,
+				DAE52AE11A26E73000741CCE /* util */,
 			);
-			path = scrypt;
+			path = libcperciva;
 			sourceTree = "<group>";
 		};
-		DABD3EAF1711E81B00CF925C /* scrypt */ = {
+		DAE52ADA1A26E73000741CCE /* alg */ = {
 			isa = PBXGroup;
 			children = (
-				DABD3EB01711E81B00CF925C /* crypto_aesctr.h */,
-				DABD3EB11711E81B00CF925C /* crypto_scrypt.h */,
-				DABD3EB21711E81B00CF925C /* memlimit.h */,
-				DABD3EB31711E81B00CF925C /* readpass.h */,
-				DABD3EB41711E81B00CF925C /* scryptenc.h */,
-				DABD3EB51711E81B00CF925C /* scryptenc_cpuperf.h */,
-				DABD3EB61711E81B00CF925C /* sha256.h */,
-				DABD3EB71711E81B00CF925C /* sysendian.h */,
-				DABD3EB81711E81B00CF925C /* warn.h */,
+				DAE52ADB1A26E73000741CCE /* sha256.c */,
+				DAE52ADC1A26E73000741CCE /* sha256.h */,
 			);
-			name = scrypt;
-			path = ../../../include/scrypt;
+			path = alg;
+			sourceTree = "<group>";
+		};
+		DAE52ADE1A26E73000741CCE /* crypto */ = {
+			isa = PBXGroup;
+			children = (
+				DAE52ADF1A26E73000741CCE /* crypto_aesctr.c */,
+				DAE52AE01A26E73000741CCE /* crypto_aesctr.h */,
+			);
+			path = crypto;
+			sourceTree = "<group>";
+		};
+		DAE52AE11A26E73000741CCE /* util */ = {
+			isa = PBXGroup;
+			children = (
+				DAE52AE21A26E73000741CCE /* readpass.c */,
+				DAE52AE31A26E73000741CCE /* readpass.h */,
+				DAE52AE41A26E73000741CCE /* sysendian.h */,
+				DAE52AE51A26E73000741CCE /* warnp.c */,
+				DAE52AE61A26E73000741CCE /* warnp.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		DAE52AFD1A26E82F00741CCE /* libcperciva */ = {
+			isa = PBXGroup;
+			children = (
+				DAE52AFE1A26E82F00741CCE /* libcperciva.h */,
+				DAE52B001A26E82F00741CCE /* libcperciva.m */,
+			);
+			path = libcperciva;
+			sourceTree = "<group>";
+		};
+		DAE52B0A1A26E82F00741CCE /* libcpercivaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAE52B0B1A26E82F00741CCE /* Supporting Files */,
+			);
+			path = libcpercivaTests;
+			sourceTree = "<group>";
+		};
+		DAE52B0B1A26E82F00741CCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DAE52B0C1A26E82F00741CCE /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -610,25 +536,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2C3CC61BD92EB1001137B3 /* crypto_scrypt_smix_sse2.h in Headers */,
-				DA2C3CCC1BD92EB1001137B3 /* memlimit.h in Headers */,
-				DA2C3CDE1BD92EB1001137B3 /* entropy.h in Headers */,
-				DA2C3CE51BD92EB1001137B3 /* warnp.h in Headers */,
-				DA2C3CE21BD92EB1001137B3 /* readpass.h in Headers */,
-				DA2C3CD81BD92EB1001137B3 /* crypto_aes_aesni.h in Headers */,
-				DA2C3CC41BD92EB1001137B3 /* crypto_scrypt_smix.h in Headers */,
-				DA2C3CE01BD92EB1001137B3 /* insecure_memzero.h in Headers */,
-				DA2C3CDC1BD92EB1001137B3 /* crypto_entropy.h in Headers */,
-				DA2C3CC21BD92EB1001137B3 /* crypto_scrypt.h in Headers */,
-				DA2C3CD21BD92EB1001137B3 /* cpusupport.h in Headers */,
-				DA2C3CBF1BD92EB1001137B3 /* config.h in Headers */,
-				DA2C3CE31BD92EB1001137B3 /* sysendian.h in Headers */,
-				DA2C3CCA1BD92EB1001137B3 /* scryptenc_cpuperf.h in Headers */,
-				DA2C3CD61BD92EB1001137B3 /* crypto_aes.h in Headers */,
-				DA2C3CC81BD92EB1001137B3 /* scryptenc.h in Headers */,
-				DA2C3CCE1BD92EB1001137B3 /* sha256.h in Headers */,
-				DA2C3CE71BD92EB1001137B3 /* scrypt_platform.h in Headers */,
-				DA2C3CDA1BD92EB1001137B3 /* crypto_aesctr.h in Headers */,
+				DAE52AF11A26E77800741CCE /* crypto_scrypt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +544,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE52AF51A26E77E00741CCE /* scryptenc_cpuperf.h in Headers */,
+				DAE52AF31A26E77E00741CCE /* scryptenc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -643,6 +553,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE52AF71A26E78500741CCE /* memlimit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,15 +561,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABD3ECD171227EA00CF925C /* crypto_aesctr.h in Headers */,
-				DABD3ECE171227EA00CF925C /* crypto_scrypt.h in Headers */,
-				DABD3ECF171227EA00CF925C /* memlimit.h in Headers */,
-				DABD3ED0171227EA00CF925C /* readpass.h in Headers */,
-				DABD3ED1171227EA00CF925C /* scryptenc.h in Headers */,
-				DABD3ED2171227EA00CF925C /* scryptenc_cpuperf.h in Headers */,
-				DABD3ED3171227EA00CF925C /* sha256.h in Headers */,
-				DABD3ED4171227EA00CF925C /* sysendian.h in Headers */,
-				DABD3ED5171227EA00CF925C /* warn.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,15 +568,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DABD3F691712288700CF925C /* crypto_aesctr.h in Headers */,
-				DABD3F6A1712288700CF925C /* crypto_scrypt.h in Headers */,
-				DABD3F6B1712288700CF925C /* memlimit.h in Headers */,
-				DABD3F6C1712288700CF925C /* readpass.h in Headers */,
-				DABD3F6D1712288700CF925C /* scryptenc.h in Headers */,
-				DABD3F6E1712288700CF925C /* scryptenc_cpuperf.h in Headers */,
-				DABD3F6F1712288700CF925C /* sha256.h in Headers */,
-				DABD3F701712288700CF925C /* sysendian.h in Headers */,
-				DABD3F711712288700CF925C /* warn.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAE52B171A26E9C700741CCE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE52B1A1A26E9EC00741CCE /* readpass.h in Headers */,
+				DAE52B181A26E9EC00741CCE /* sha256.h in Headers */,
+				DAE52B1C1A26E9EC00741CCE /* warnp.h in Headers */,
+				DAE52B191A26E9EC00741CCE /* crypto_aesctr.h in Headers */,
+				DAE52B1B1A26E9EC00741CCE /* sysendian.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +594,6 @@
 			);
 			buildToolPath = /usr/bin/make;
 			dependencies = (
-				DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */,
 			);
 			name = "Makefile-scrypt";
 			passBuildSettingsInEnvironment = 1;
@@ -710,8 +614,8 @@
 			);
 			dependencies = (
 				A0511DF3127788FD00DE46C4 /* PBXTargetDependency */,
+				DAE52B1E1A26EA2F00741CCE /* PBXTargetDependency */,
 				DA6E4A3C155E581F00CFF2D5 /* PBXTargetDependency */,
-				DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */,
 			);
 			name = scryptcrypto;
 			productName = openssl;
@@ -793,13 +697,35 @@
 			productReference = DABD3E9D1711E7E000CF925C /* libscrypt-bin-osx.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		DAE52AFB1A26E82F00741CCE /* libcperciva */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAE52B0D1A26E82F00741CCE /* Build configuration list for PBXNativeTarget "libcperciva" */;
+			buildPhases = (
+				DAE52B171A26E9C700741CCE /* Headers */,
+				DAE52AF81A26E82F00741CCE /* Sources */,
+				DAE52AF91A26E82F00741CCE /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libcperciva;
+			productName = libcperciva;
+			productReference = DAE52AFC1A26E82F00741CCE /* liblibcperciva.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0610;
+				TargetAttributes = {
+					DAE52AFB1A26E82F00741CCE = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "scrypt" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -814,83 +740,26 @@
 			mainGroup = 0867D691FE84028FC02AAC07 /* openssl */;
 			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = DA1A13E414E487D800BCFFBE /* Products */;
-					ProjectRef = DA1A13E314E487D800BCFFBE /* openssl.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				A0511DED127788EC00DE46C4 /* Makefile-scrypt */,
 				D2AAC07D0554694100DB518D /* scryptenc */,
 				A0511C51127770FD00DE46C4 /* scryptcrypto */,
 				DA67FE2814E4834300DB7CC9 /* util */,
-				A0511DCE127788A100DE46C4 /* scrypt */,
+				DAE52AFB1A26E82F00741CCE /* libcperciva */,
 				DABD3E831711E7D600CF925C /* scrypt-bin-ios */,
 				DABD3E9C1711E7E000CF925C /* scrypt-bin-osx */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		DA1A13F014E487D900BCFFBE /* libssl.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libssl.a;
-			remoteRef = DA1A13EF14E487D900BCFFBE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DA1A13F214E487D900BCFFBE /* libcrypto.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libcrypto.a;
-			remoteRef = DA1A13F114E487D900BCFFBE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DA1A13F414E487D900BCFFBE /* test.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = test.app;
-			remoteRef = DA1A13F314E487D900BCFFBE /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DABD3E951711E7D700CF925C /* libopenssl-bin-ios.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libopenssl-bin-ios.a";
-			remoteRef = DABD3E941711E7D700CF925C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		DABD3E971711E7D700CF925C /* libopenssl-bin-osx.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libopenssl-bin-osx.a";
-			remoteRef = DABD3E961711E7D700CF925C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXSourcesBuildPhase section */
 		A0511C54127770FD00DE46C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2C3CDB1BD92EB1001137B3 /* crypto_entropy.c in Sources */,
-				DA2C3CD91BD92EB1001137B3 /* crypto_aesctr.c in Sources */,
-				DA2C3CDF1BD92EB1001137B3 /* insecure_memzero.c in Sources */,
-				DA2C3CC01BD92EB1001137B3 /* crypto_scrypt-ref.c in Sources */,
-				DA2C3CDD1BD92EB1001137B3 /* entropy.c in Sources */,
-				DA2C3CD71BD92EB1001137B3 /* crypto_aes_aesni.c in Sources */,
-				DA2C3CCD1BD92EB1001137B3 /* sha256.c in Sources */,
-				DA2C3CE41BD92EB1001137B3 /* warnp.c in Sources */,
-				DA2C3CE11BD92EB1001137B3 /* readpass.c in Sources */,
-				DA2C3CD51BD92EB1001137B3 /* crypto_aes.c in Sources */,
-				DA2C3CC11BD92EB1001137B3 /* crypto_scrypt.c in Sources */,
-				DA2C3CC31BD92EB1001137B3 /* crypto_scrypt_smix.c in Sources */,
-				DA2C3CD31BD92EB1001137B3 /* cpusupport_x86_aesni.c in Sources */,
-				DA2C3CD41BD92EB1001137B3 /* cpusupport_x86_sse2.c in Sources */,
-				DA2C3CC51BD92EB1001137B3 /* crypto_scrypt_smix_sse2.c in Sources */,
+				DAE52AEE1A26E77800741CCE /* crypto_scrypt-nosse.c in Sources */,
+				DAE52AEF1A26E77800741CCE /* crypto_scrypt-ref.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,8 +767,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2C3CE81BD92EBE001137B3 /* scryptenc.c in Sources */,
-				DA2C3CE91BD92EC2001137B3 /* scryptenc_cpuperf.c in Sources */,
+				DAE52AF21A26E77E00741CCE /* scryptenc.c in Sources */,
+				DAE52AF41A26E77E00741CCE /* scryptenc_cpuperf.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -907,7 +776,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2C3CEA1BD92ECD001137B3 /* memlimit.c in Sources */,
+				DAE52AF61A26E78500741CCE /* memlimit.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -925,19 +794,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DAE52AF81A26E82F00741CCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAE52B131A26E99500741CCE /* sha256.c in Sources */,
+				DAE52B011A26E82F00741CCE /* libcperciva.m in Sources */,
+				DAE52B161A26E9A100741CCE /* warnp.c in Sources */,
+				DAE52B151A26E99E00741CCE /* readpass.c in Sources */,
+				DAE52B141A26E99B00741CCE /* crypto_aesctr.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A0511DD2127788A800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D2AAC07D0554694100DB518D /* scryptenc */;
-			targetProxy = A0511DD1127788A800DE46C4 /* PBXContainerItemProxy */;
-		};
-		A0511DD4127788A800DE46C4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A0511C51127770FD00DE46C4 /* scryptcrypto */;
-			targetProxy = A0511DD3127788A800DE46C4 /* PBXContainerItemProxy */;
-		};
 		A0511DF1127788F600DE46C4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
@@ -953,11 +824,6 @@
 			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
 			targetProxy = DA67FE2A14E4834300DB7CC9 /* PBXContainerItemProxy */;
 		};
-		DA67FE5F14E4836300DB7CC9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA67FE2814E4834300DB7CC9 /* util */;
-			targetProxy = DA67FE5E14E4836300DB7CC9 /* PBXContainerItemProxy */;
-		};
 		DA6E4A34155E580D00CFF2D5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0511C51127770FD00DE46C4 /* scryptcrypto */;
@@ -967,16 +833,6 @@
 			isa = PBXTargetDependency;
 			target = DA67FE2814E4834300DB7CC9 /* util */;
 			targetProxy = DA6E4A3B155E581F00CFF2D5 /* PBXContainerItemProxy */;
-		};
-		DA6E4A3E155E582200CFF2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = crypto;
-			targetProxy = DA6E4A3D155E582200CFF2D5 /* PBXContainerItemProxy */;
-		};
-		DA6E4A40155E592700CFF2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Makefile-openssl";
-			targetProxy = DA6E4A3F155E592700CFF2D5 /* PBXContainerItemProxy */;
 		};
 		DABD3EBA1711E84500CF925C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -988,31 +844,33 @@
 			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
 			targetProxy = DABD3EBD1711E85B00CF925C /* PBXContainerItemProxy */;
 		};
+		DAE52B1E1A26EA2F00741CCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAE52AFB1A26E82F00741CCE /* libcperciva */;
+			targetProxy = DAE52B1D1A26EA2F00741CCE /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB922008733DC00010E9CD /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-OSX";
 		};
 		1DEB922408733DC00010E9CD /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_UNROLL_LOOPS = YES;
@@ -1023,33 +881,17 @@
 				LD_NO_PIE = NO;
 				LLVM_VECTORIZE_LOOPS = YES;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = "Release-OSX";
 		};
 		A0511C59127770FD00DE46C4 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = "Release-OSX";
-		};
-		A0511DD0127788A200DE46C4 /* Release-OSX */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = scrypt;
-				ZERO_LINK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-OSX";
 		};
@@ -1068,89 +910,50 @@
 		DA67FE5C14E4834300DB7CC9 /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-OSX";
 		};
 		DABD3E8E1711E7D700CF925C /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/scrypt_bin_ios.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-OSX";
 		};
 		DABD3EA81711E7E100CF925C /* Release-OSX */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/scrypt_bin_osx.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "scrypt-bin-osx/scrypt-bin-osx-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-OSX";
+		};
+		DAE52B0E1A26E82F00741CCE /* Release-OSX */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = "Release-OSX";
+		};
+		DAE52B0F1A26E82F00741CCE /* Release-iOS */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+			};
+			name = "Release-iOS";
 		};
 		DAFFC60617ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_FAST_MATH = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = fast;
 				GCC_THUMB_SUPPORT = NO;
 				GCC_UNROLL_LOOPS = YES;
@@ -1162,8 +965,10 @@
 				LD_NO_PIE = NO;
 				LLVM_VECTORIZE_LOOPS = YES;
 				OTHER_CFLAGS = "-DHAVE_CONFIG_H";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = "Release-iOS";
 		};
@@ -1182,115 +987,35 @@
 		DAFFC60817ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-iOS";
 		};
 		DAFFC60917ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-iOS";
 		};
 		DAFFC60A17ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				HEADER_SEARCH_PATHS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = "Release-iOS";
-		};
-		DAFFC60B17ED4298007BB020 /* Release-iOS */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_THUMB_SUPPORT = NO;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				PRODUCT_NAME = scrypt;
-				ZERO_LINK = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-iOS";
 		};
 		DAFFC60C17ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/scrypt_bin_ios.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-iOS";
 		};
 		DAFFC60D17ED4298007BB020 /* Release-iOS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DSTROOT = /tmp/scrypt_bin_osx.dst;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "scrypt-bin-osx/scrypt-bin-osx-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)\"",
-				);
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				VALIDATE_PRODUCT = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 			};
 			name = "Release-iOS";
 		};
@@ -1320,15 +1045,6 @@
 			buildConfigurations = (
 				A0511C59127770FD00DE46C4 /* Release-OSX */,
 				DAFFC60917ED4298007BB020 /* Release-iOS */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = "Release-OSX";
-		};
-		A0511DEA127788C900DE46C4 /* Build configuration list for PBXAggregateTarget "scrypt" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A0511DD0127788A200DE46C4 /* Release-OSX */,
-				DAFFC60B17ED4298007BB020 /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release-OSX";
@@ -1365,6 +1081,15 @@
 			buildConfigurations = (
 				DABD3EA81711E7E100CF925C /* Release-OSX */,
 				DAFFC60D17ED4298007BB020 /* Release-iOS */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Release-OSX";
+		};
+		DAE52B0D1A26E82F00741CCE /* Build configuration list for PBXNativeTarget "libcperciva" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAE52B0E1A26E82F00741CCE /* Release-OSX */,
+				DAE52B0F1A26E82F00741CCE /* Release-iOS */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = "Release-OSX";
