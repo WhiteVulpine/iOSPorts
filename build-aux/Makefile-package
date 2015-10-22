@@ -40,6 +40,7 @@ clean: clean-local
 
 distclean: distclean-local clean
 	/bin/rm -f  $(PACKAGE_MD5)
+	/bin/rm -f  $(PACKAGE_SHA256)
 	/bin/rm -fR $(PACKAGE_DIR)
 	/bin/rm -fR $(PACKAGE_TARNAME)
 	/bin/rm -f $(PACKAGE_FILE)
@@ -62,7 +63,7 @@ $(PACKAGE_TARNAME): $(PACKAGE_DIR)
 	/bin/ln -s $(PACKAGE_DIR) $(PACKAGE_TARNAME)
 	@/usr/bin/touch $(PACKAGE_TARNAME)
 
-$(PACKAGE_DIR): $(PACKAGE_MD5)
+$(PACKAGE_DIR): $(PACKAGE_MD5) $(PACKAGE_SHA256)
 	@/bin/rm -Rf $(PACKAGE_DIR)
 	/usr/bin/tar -xzf $(PACKAGE_FILE)
 	@/usr/bin/touch $(PACKAGE_DIR)
@@ -72,6 +73,12 @@ $(PACKAGE_MD5): Makefile $(PACKAGE_FILE)
 	/usr/bin/diff $(PACKAGE_MD5) build-aux/$(PACKAGE_FILE).md5 > /dev/null \
 		|| { /bin/rm -f $(PACKAGE_MD5) $(PACKAGE_FILE); exit 1; };
 	@/usr/bin/touch $(PACKAGE_MD5)
+
+$(PACKAGE_SHA256): Makefile $(PACKAGE_FILE)
+	openssl sha -sha256 < $(PACKAGE_FILE) > $(PACKAGE_SHA256)
+	/usr/bin/diff $(PACKAGE_SHA256) build-aux/$(PACKAGE_FILE).sha256 > /dev/null \
+		|| { /bin/rm -f $(PACKAGE_SHA256) $(PACKAGE_FILE); exit 1; };
+	@/usr/bin/touch $(PACKAGE_SHA256)
 
 $(PACKAGE_FILE):
 	/usr/bin/curl -O $(PACKAGE_URL) -o $(PACKAGE_FILE) -s \
