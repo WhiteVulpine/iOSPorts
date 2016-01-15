@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "917334F59893EBD87714E5D8703B1F3AE47154F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "917334F59893EBD87714E5D8703B1F3AE47154F0" : 0,
+    "2A70319CE0F91B35406CA7D970AE7CB4957B0A75" : 0,
+    "4DDCFFD91B41F00326AD14553BD66CFD366ABD91" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "63C0555A-3306-40A6-9549-D45F9241E1DD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "917334F59893EBD87714E5D8703B1F3AE47154F0" : "iOSPorts\/",
+    "2A70319CE0F91B35406CA7D970AE7CB4957B0A75" : "..\/..",
+    "4DDCFFD91B41F00326AD14553BD66CFD366ABD91" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "openssl",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ports\/security\/openssl\/openssl.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Lyndir\/Lyndir.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A70319CE0F91B35406CA7D970AE7CB4957B0A75"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:Lyndir\/Pearl.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4DDCFFD91B41F00326AD14553BD66CFD366ABD91"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:lhunath\/iOSPorts.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "917334F59893EBD87714E5D8703B1F3AE47154F0"
+    }
+  ]
+}

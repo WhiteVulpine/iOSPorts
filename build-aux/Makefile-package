@@ -57,6 +57,8 @@ license: $(SRCROOTDIR)/build-aux/iOSPorts-geninfo
 		-w "$(PACKAGE_WEBSITE)" \
 		-i "$(PACKAGE_LICENSE_FILE)"
 
+install: distclean all
+
 # download targets
 $(PACKAGE_TARNAME): $(PACKAGE_DIR)
 	@/bin/rm -Rf $(PACKAGE_TARNAME)

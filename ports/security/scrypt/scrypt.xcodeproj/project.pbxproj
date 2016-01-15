@@ -86,6 +86,13 @@
 			remoteGlobalIDString = DA67FE2814E4834300DB7CC9;
 			remoteInfo = util;
 		};
+		DA7F2C5B1C48AF5100404A26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0511DED127788EC00DE46C4;
+			remoteInfo = "Makefile-scrypt";
+		};
 		DABD3EB91711E84500CF925C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -616,6 +623,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DA7F2C5C1C48AF5100404A26 /* PBXTargetDependency */,
 			);
 			name = libcperciva;
 			productName = libcperciva;
@@ -750,6 +758,11 @@
 			target = DA67FE2814E4834300DB7CC9 /* util */;
 			targetProxy = DA6E4A3B155E581F00CFF2D5 /* PBXContainerItemProxy */;
 		};
+		DA7F2C5C1C48AF5100404A26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
+			targetProxy = DA7F2C5B1C48AF5100404A26 /* PBXContainerItemProxy */;
+		};
 		DABD3EBA1711E84500CF925C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A0511DED127788EC00DE46C4 /* Makefile-scrypt */;
@@ -780,6 +793,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				BITCODE_GENERATION_MODE = bitcode;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -863,6 +877,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				BITCODE_GENERATION_MODE = bitcode;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
